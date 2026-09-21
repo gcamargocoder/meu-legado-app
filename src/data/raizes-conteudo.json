@@ -1,0 +1,239 @@
+{
+  "categoriasCondutas": [
+    {
+      "id": "rotina",
+      "nome": "Rotina e responsabilidade",
+      "condutas": [
+        { "id": "arrumar-cama", "titulo": "Arrumar a cama", "descricao": "Arrumou a cama sem precisar de lembrete." },
+        { "id": "guardar-brinquedos", "titulo": "Guardar os brinquedos", "descricao": "Guardou os brinquedos depois de brincar." },
+        { "id": "licao-de-casa", "titulo": "Fazer a lição de casa", "descricao": "Fez a lição de casa no horário combinado." },
+        { "id": "por-mesa", "titulo": "Ajudar a pôr a mesa", "descricao": "Ajudou a arrumar ou tirar a mesa das refeições." },
+        { "id": "escovar-dentes", "titulo": "Escovar os dentes sozinho", "descricao": "Escovou os dentes sem precisar de lembrete." }
+      ]
+    },
+    {
+      "id": "respeito",
+      "nome": "Respeito e convivência",
+      "condutas": [
+        { "id": "por-favor-obrigado", "titulo": "Dizer por favor e obrigado", "descricao": "Usou as palavras mágicas naturalmente." },
+        { "id": "esperar-a-vez", "titulo": "Esperar a vez para falar", "descricao": "Esperou a vez de falar sem interromper." },
+        { "id": "pedir-desculpas", "titulo": "Pedir desculpas", "descricao": "Reconheceu um erro e pediu desculpas sem ser forçado." },
+        { "id": "gentileza-irmaos", "titulo": "Ser gentil com os irmãos", "descricao": "Tratou irmãos ou colegas com gentileza numa situação de tensão." }
+      ]
+    },
+    {
+      "id": "autonomia",
+      "nome": "Autonomia",
+      "condutas": [
+        { "id": "vestir-sozinho", "titulo": "Se vestir sozinho", "descricao": "Escolheu e vestiu a própria roupa." },
+        { "id": "preparar-lanche", "titulo": "Preparar um lanche simples", "descricao": "Preparou um lanche simples sem ajuda." },
+        { "id": "organizar-mochila", "titulo": "Organizar a mochila", "descricao": "Organizou a mochila para o dia seguinte sem lembrete." }
+      ]
+    },
+    {
+      "id": "cuidado",
+      "nome": "Cuidado com os outros",
+      "condutas": [
+        { "id": "ajudar-sem-pedir", "titulo": "Ajudar em casa sem ser pedido", "descricao": "Ofereceu ajuda em alguma tarefa doméstica por iniciativa própria." },
+        { "id": "cuidar-do-pet", "titulo": "Cuidar do animal de estimação", "descricao": "Alimentou ou cuidou do pet da família." },
+        { "id": "compartilhar", "titulo": "Compartilhar", "descricao": "Compartilhou um brinquedo, lanche ou espaço sem ser cobrado." }
+      ]
+    }
+  ],
+  "situacoes": [
+    {
+      "id": "birra-publico",
+      "titulo": "Birra em lugar público",
+      "categoria": "Regulação emocional",
+      "porque": "A birra costuma ser uma crise de regulação emocional, não uma provocação. O cérebro infantil ainda não tem maturidade para lidar com frustração em ambientes cheios de estímulo.",
+      "passosPraticos": [
+        "Mantenha a calma e abaixe-se na altura da criança.",
+        "Valide o sentimento antes de corrigir o comportamento.",
+        "Ofereça uma escolha simples para devolver senso de controle.",
+        "Se necessário, retire a criança do ambiente até acalmar."
+      ],
+      "frasePraUsar": "Eu vejo que você está bravo. Vamos respirar juntos antes de continuar."
+    },
+    {
+      "id": "recusa-licao",
+      "titulo": "Recusa em fazer a lição de casa",
+      "categoria": "Rotina",
+      "porque": "Recusa costuma esconder cansaço, dificuldade real com o conteúdo ou excesso de atividades no dia.",
+      "passosPraticos": [
+        "Pergunte o que está difícil antes de insistir.",
+        "Divida a tarefa em partes menores.",
+        "Combine um horário fixo e prever pequenas pausas.",
+        "Elogie o esforço, não só o resultado."
+      ],
+      "frasePraUsar": "Vamos fazer só a primeira parte agora e depois decidir o resto juntos."
+    },
+    {
+      "id": "brigas-irmaos",
+      "titulo": "Brigas entre irmãos",
+      "categoria": "Convivência",
+      "porque": "Disputas entre irmãos são normais e fazem parte do aprendizado de negociação e limites.",
+      "passosPraticos": [
+        "Não tome partido antes de ouvir os dois lados.",
+        "Ajude cada um a nomear o que sentiu.",
+        "Guie-os a proporem uma solução juntos.",
+        "Evite comparações entre os irmãos."
+      ],
+      "frasePraUsar": "Cada um vai contar o que aconteceu, sem interromper o outro."
+    },
+    {
+      "id": "mentiras",
+      "titulo": "Mentiras",
+      "categoria": "Confiança",
+      "porque": "Mentir nessa fase costuma ser medo de punição ou de decepcionar, não caráter formado.",
+      "passosPraticos": [
+        "Reaja com calma, sem exagerar a punição.",
+        "Explique por que a verdade importa para a confiança entre vocês.",
+        "Valorize quando a criança conta a verdade, mesmo sobre algo errado.",
+        "Evite armadilhas do tipo 'eu sei que você fez, admite'."
+      ],
+      "frasePraUsar": "Obrigado por me contar a verdade. Vamos resolver isso juntos."
+    },
+    {
+      "id": "excesso-telas",
+      "titulo": "Uso excessivo de telas",
+      "categoria": "Rotina",
+      "porque": "Telas ativam recompensa rápida no cérebro; sem limites claros, a criança não desenvolve autorregulação sozinha.",
+      "passosPraticos": [
+        "Combine o tempo de tela antes de começar, não durante.",
+        "Use um alarme visual para o fim do tempo.",
+        "Ofereça uma atividade concreta para depois da tela.",
+        "Seja consistente mesmo quando for mais fácil ceder."
+      ],
+      "frasePraUsar": "Faltam cinco minutos para o tempo de tela acabar, como combinamos."
+    },
+    {
+      "id": "dificuldade-dormir",
+      "titulo": "Dificuldade para dormir",
+      "categoria": "Rotina",
+      "porque": "Ansiedade, excesso de estímulo antes de dormir ou rotina inconsistente atrapalham o sono.",
+      "passosPraticos": [
+        "Crie uma rotina fixa e previsível antes de dormir.",
+        "Desligue telas pelo menos 30 minutos antes.",
+        "Converse sobre o dia para esvaziar preocupações.",
+        "Mantenha o mesmo horário todos os dias, inclusive fins de semana."
+      ],
+      "frasePraUsar": "Vamos fazer nossa rotina de sempre: banho, história e luz apagada."
+    },
+    {
+      "id": "desobediencia-regras",
+      "titulo": "Desobediência a regras combinadas",
+      "categoria": "Limites",
+      "porque": "Testar limites é parte do desenvolvimento; a criança verifica se a regra realmente vale.",
+      "passosPraticos": [
+        "Relembre a regra combinada com calma, sem sermão longo.",
+        "Aplique a consequência natural já combinada, sem ameaças novas.",
+        "Seja consistente: a mesma regra vale todos os dias.",
+        "Reconheça quando a criança cumprir o combinado."
+      ],
+      "frasePraUsar": "A gente combinou isso antes. Vamos cumprir o que ficou combinado."
+    },
+    {
+      "id": "ciumes-irmao",
+      "titulo": "Ciúmes de um novo irmão",
+      "categoria": "Convivência",
+      "porque": "A chegada de um irmão pode ser vivida como perda de espaço e atenção exclusiva.",
+      "passosPraticos": [
+        "Reserve um tempo individual só para essa criança.",
+        "Inclua-a em pequenos cuidados com o bebê, se quiser participar.",
+        "Valide o sentimento de ciúmes sem julgar.",
+        "Evite frases como 'você já é grande, não precisa de colo'."
+      ],
+      "frasePraUsar": "Você continua sendo muito importante para mim, do jeito que sempre foi."
+    }
+  ],
+  "frasesCategorias": [
+    {
+      "id": "conflito",
+      "nome": "Na hora do conflito",
+      "frases": [
+        "Vamos respirar fundo antes de continuar essa conversa.",
+        "Eu entendo que você está chateado com isso.",
+        "Podemos resolver isso com calma, sem gritar.",
+        "Me conta o que aconteceu do seu jeito."
+      ]
+    },
+    {
+      "id": "incentivar",
+      "nome": "Para incentivar",
+      "frases": [
+        "Eu vi o esforço que você fez nisso.",
+        "Você conseguiu porque não desistiu.",
+        "Estou orgulhoso de como você tentou de novo.",
+        "Isso foi uma escolha muito madura da sua parte."
+      ]
+    },
+    {
+      "id": "validar",
+      "nome": "Para validar sentimentos",
+      "frases": [
+        "Faz sentido você estar triste com isso.",
+        "É normal sentir raiva às vezes, o que não pode é machucar alguém.",
+        "Eu ficaria frustrado também nessa situação.",
+        "Seu sentimento é válido, vamos pensar juntos no que fazer com ele."
+      ]
+    },
+    {
+      "id": "dizer-nao",
+      "nome": "Na hora de dizer não",
+      "frases": [
+        "Hoje não vai ser possível, e tudo bem você ficar chateado com isso.",
+        "Entendo que você queira, mas a resposta é não.",
+        "Não é sobre gostar ou não, é sobre o que combinamos.",
+        "Podemos conversar sobre isso outra hora, mas agora não."
+      ]
+    },
+    {
+      "id": "reparar",
+      "nome": "Para reparar depois de um erro",
+      "frases": [
+        "Eu me alterei mais do que deveria, me desculpa.",
+        "Vamos conversar de novo, dessa vez com mais calma.",
+        "Eu também erro às vezes, e está tudo bem aprendermos juntos.",
+        "Obrigado por ter paciência comigo agora há pouco."
+      ]
+    }
+  ],
+  "faixasCusto": [
+    {
+      "id": "sem-custo",
+      "nome": "Sem custo",
+      "premios": [
+        { "id": "escolher-filme", "titulo": "Escolher o filme da noite", "descricao": "A criança decide o que a família assiste." },
+        { "id": "tempo-extra-tela", "titulo": "15 minutos extras de tela", "descricao": "Tempo adicional combinado de tela." },
+        { "id": "escolher-jantar", "titulo": "Escolher o jantar", "descricao": "A criança escolhe o cardápio do jantar." }
+      ]
+    },
+    {
+      "id": "baixo-custo",
+      "nome": "Baixo custo",
+      "premios": [
+        { "id": "sorvete", "titulo": "Sorvete especial", "descricao": "Uma saída rápida para tomar sorvete." },
+        { "id": "ida-parque", "titulo": "Ida ao parque", "descricao": "Uma tarde no parque perto de casa." },
+        { "id": "brinquedo-pequeno", "titulo": "Brinquedo pequeno", "descricao": "Um brinquedo simples e barato." }
+      ]
+    },
+    {
+      "id": "medio-custo",
+      "nome": "Médio custo",
+      "premios": [
+        { "id": "livro-novo", "titulo": "Livro novo", "descricao": "Escolher um livro na livraria." },
+        { "id": "passeio-especial", "titulo": "Passeio especial", "descricao": "Um passeio como cinema ou parquinho pago." },
+        { "id": "jogo-tabuleiro", "titulo": "Jogo de tabuleiro", "descricao": "Um jogo novo para a família jogar junto." }
+      ]
+    },
+    {
+      "id": "alto-custo",
+      "nome": "Alto custo / especial",
+      "premios": [
+        { "id": "dia-especial", "titulo": "Dia especial a dois", "descricao": "Um dia inteiro só com o pai ou a mãe, fazendo o que a criança escolher." },
+        { "id": "passeio-maior", "titulo": "Passeio maior", "descricao": "Um passeio maior, como parque temático ou viagem curta." },
+        { "id": "presente-desejado", "titulo": "Presente desejado", "descricao": "Aquele presente que a criança vem pedindo há um tempo." }
+      ]
+    }
+  ]
+}

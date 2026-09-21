@@ -1,0 +1,139 @@
+{
+  "faixas": [
+    {
+      "id": "2-5",
+      "faixa": "2-5",
+      "titulo": "Primeira infância",
+      "idadeMin": 2,
+      "idadeMax": 5,
+      "fasesDesenvolvimento": [
+        "Desenvolvimento rápido da linguagem e da autonomia motora.",
+        "Ainda não tem maturidade para autorregulação emocional.",
+        "Pensamento concreto: entende regras simples e imediatas."
+      ],
+      "abordagemPais": [
+        "Use frases curtas e diretas.",
+        "Antecipe transições ('daqui a pouco vamos...').",
+        "Ofereça escolhas limitadas para dar senso de controle.",
+        "Mantenha rotinas previsíveis."
+      ],
+      "desafiosComuns": [
+        "Birras frequentes.",
+        "Dificuldade em esperar a vez.",
+        "Resistência a mudanças de rotina."
+      ],
+      "frasesGuia": [
+        "Eu vejo que você está bravo, vamos respirar juntos.",
+        "Primeiro guardamos os brinquedos, depois vamos brincar lá fora."
+      ]
+    },
+    {
+      "id": "6-9",
+      "faixa": "6-9",
+      "titulo": "Infância escolar",
+      "idadeMin": 6,
+      "idadeMax": 9,
+      "fasesDesenvolvimento": [
+        "Entrada na alfabetização e no pensamento lógico mais estruturado.",
+        "Maior consciência de regras sociais e senso de justiça.",
+        "Começa a comparar-se com colegas."
+      ],
+      "abordagemPais": [
+        "Explique o porquê das regras, não só o que fazer.",
+        "Envolva a criança na criação de combinados.",
+        "Valorize o esforço tanto quanto o resultado escolar.",
+        "Fique atento a comparações que abalem a autoestima."
+      ],
+      "desafiosComuns": [
+        "Resistência à lição de casa.",
+        "Conflitos de justiça ('não é justo').",
+        "Ciúmes e disputas entre irmãos."
+      ],
+      "frasesGuia": [
+        "Vamos combinar juntos como isso vai funcionar.",
+        "O que você acha que seria justo aqui?"
+      ]
+    },
+    {
+      "id": "10-12",
+      "faixa": "10-12",
+      "titulo": "Pré-adolescência",
+      "idadeMin": 10,
+      "idadeMax": 12,
+      "fasesDesenvolvimento": [
+        "Busca maior independência e privacidade.",
+        "Pensamento abstrato em desenvolvimento.",
+        "Forte influência do grupo de amigos."
+      ],
+      "abordagemPais": [
+        "Negocie regras em vez de apenas impor.",
+        "Respeite pedidos de privacidade dentro de limites de segurança.",
+        "Converse sobre uso de internet e redes sociais com naturalidade.",
+        "Escute mais e dê sermão menos."
+      ],
+      "desafiosComuns": [
+        "Início do uso de redes sociais e telas.",
+        "Mudanças de humor mais frequentes.",
+        "Questionamento de regras da família."
+      ],
+      "frasesGuia": [
+        "Eu confio em você, mas quero entender essa situação junto com você.",
+        "Vamos combinar um limite que faça sentido para os dois."
+      ]
+    },
+    {
+      "id": "13-15",
+      "faixa": "13-15",
+      "titulo": "Adolescência inicial",
+      "idadeMin": 13,
+      "idadeMax": 15,
+      "fasesDesenvolvimento": [
+        "Puberdade e mudanças corporais intensas.",
+        "Formação de identidade própria, distinta dos pais.",
+        "Maior necessidade de autonomia e de ser ouvido."
+      ],
+      "abordagemPais": [
+        "Evite comparações e críticas à aparência.",
+        "Mantenha o diálogo aberto mesmo diante de respostas curtas.",
+        "Estabeleça limites claros com espaço para negociação.",
+        "Esteja presente sem ser invasivo."
+      ],
+      "desafiosComuns": [
+        "Oscilação emocional intensa.",
+        "Conflitos sobre horários e liberdade.",
+        "Sensibilidade a críticas."
+      ],
+      "frasesGuia": [
+        "Eu não vou concordar com tudo, mas sempre vou te ouvir.",
+        "Me ajuda a entender o que você está sentindo?"
+      ]
+    },
+    {
+      "id": "16-18",
+      "faixa": "16-18",
+      "titulo": "Adolescência final",
+      "idadeMin": 16,
+      "idadeMax": 18,
+      "fasesDesenvolvimento": [
+        "Consolidação de valores e planos para o futuro.",
+        "Maior capacidade de pensamento abstrato e planejamento.",
+        "Busca por reconhecimento como adulto em formação."
+      ],
+      "abordagemPais": [
+        "Trate como alguém cada vez mais responsável pelas próprias escolhas.",
+        "Compartilhe experiências em vez de dar ordens.",
+        "Apoie decisões sobre futuro (estudo, trabalho) sem impor.",
+        "Mantenha-se disponível para conversas difíceis, sem julgar primeiro."
+      ],
+      "desafiosComuns": [
+        "Ansiedade sobre o futuro (vestibular, carreira).",
+        "Primeiras experiências de relacionamento e trabalho.",
+        "Busca por mais liberdade e menos supervisão."
+      ],
+      "frasesGuia": [
+        "Essa decisão é sua, e eu estou aqui se precisar conversar.",
+        "Conta comigo para pensar nisso junto, sem cobrança."
+      ]
+    }
+  ]
+}
