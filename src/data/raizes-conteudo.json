@@ -203,36 +203,36 @@
       "id": "sem-custo",
       "nome": "Sem custo",
       "premios": [
-        { "id": "escolher-filme", "titulo": "Escolher o filme da noite", "descricao": "A criança decide o que a família assiste." },
-        { "id": "tempo-extra-tela", "titulo": "15 minutos extras de tela", "descricao": "Tempo adicional combinado de tela." },
-        { "id": "escolher-jantar", "titulo": "Escolher o jantar", "descricao": "A criança escolhe o cardápio do jantar." }
+        { "id": "escolher-filme", "titulo": "Escolher o filme da noite", "descricao": "A criança decide o que a família assiste.", "estrelas": 5 },
+        { "id": "tempo-extra-tela", "titulo": "15 minutos extras de tela", "descricao": "Tempo adicional combinado de tela.", "estrelas": 5 },
+        { "id": "escolher-jantar", "titulo": "Escolher o jantar", "descricao": "A criança escolhe o cardápio do jantar.", "estrelas": 8 }
       ]
     },
     {
       "id": "baixo-custo",
       "nome": "Baixo custo",
       "premios": [
-        { "id": "sorvete", "titulo": "Sorvete especial", "descricao": "Uma saída rápida para tomar sorvete." },
-        { "id": "ida-parque", "titulo": "Ida ao parque", "descricao": "Uma tarde no parque perto de casa." },
-        { "id": "brinquedo-pequeno", "titulo": "Brinquedo pequeno", "descricao": "Um brinquedo simples e barato." }
+        { "id": "sorvete", "titulo": "Sorvete especial", "descricao": "Uma saída rápida para tomar sorvete.", "estrelas": 15 },
+        { "id": "ida-parque", "titulo": "Ida ao parque", "descricao": "Uma tarde no parque perto de casa.", "estrelas": 15 },
+        { "id": "brinquedo-pequeno", "titulo": "Brinquedo pequeno", "descricao": "Um brinquedo simples e barato.", "estrelas": 20 }
       ]
     },
     {
       "id": "medio-custo",
       "nome": "Médio custo",
       "premios": [
-        { "id": "livro-novo", "titulo": "Livro novo", "descricao": "Escolher um livro na livraria." },
-        { "id": "passeio-especial", "titulo": "Passeio especial", "descricao": "Um passeio como cinema ou parquinho pago." },
-        { "id": "jogo-tabuleiro", "titulo": "Jogo de tabuleiro", "descricao": "Um jogo novo para a família jogar junto." }
+        { "id": "livro-novo", "titulo": "Livro novo", "descricao": "Escolher um livro na livraria.", "estrelas": 30 },
+        { "id": "passeio-especial", "titulo": "Passeio especial", "descricao": "Um passeio como cinema ou parquinho pago.", "estrelas": 40 },
+        { "id": "jogo-tabuleiro", "titulo": "Jogo de tabuleiro", "descricao": "Um jogo novo para a família jogar junto.", "estrelas": 45 }
       ]
     },
     {
       "id": "alto-custo",
       "nome": "Alto custo / especial",
       "premios": [
-        { "id": "dia-especial", "titulo": "Dia especial a dois", "descricao": "Um dia inteiro só com o pai ou a mãe, fazendo o que a criança escolher." },
-        { "id": "passeio-maior", "titulo": "Passeio maior", "descricao": "Um passeio maior, como parque temático ou viagem curta." },
-        { "id": "presente-desejado", "titulo": "Presente desejado", "descricao": "Aquele presente que a criança vem pedindo há um tempo." }
+        { "id": "dia-especial", "titulo": "Dia especial a dois", "descricao": "Um dia inteiro só com o pai ou a mãe, fazendo o que a criança escolher.", "estrelas": 60 },
+        { "id": "passeio-maior", "titulo": "Passeio maior", "descricao": "Um passeio maior, como parque temático ou viagem curta.", "estrelas": 80 },
+        { "id": "presente-desejado", "titulo": "Presente desejado", "descricao": "Aquele presente que a criança vem pedindo há um tempo.", "estrelas": 100 }
       ]
     }
   ]

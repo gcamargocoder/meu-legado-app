@@ -29,6 +29,7 @@ export interface Premio {
   id: string;
   titulo: string;
   descricao: string;
+  estrelas: number;
 }
 
 export interface FaixaCusto {
