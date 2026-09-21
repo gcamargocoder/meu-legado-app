@@ -1,7 +1,8 @@
 # Meu Legado — Scaffold + Tela Início + Tab Bar — Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 > **Note for this run:** executed inline in the current session per explicit user request (no subagents, no extra checkpoints).
+> **Status:** Completed 2026-09-21. Two deviations from the literal steps: `App.tsx` and `vite.config.ts`/`index.html` were written directly in their final form (router wired in, SVG icons) instead of through the intermediate placeholder/PNG versions described in Tasks 1 and 7 — the end state matches the spec. `npx tsc --noEmit`, `npm run build`, and a manual `npm run dev` check all passed.
 
 **Goal:** Scaffold the "Meu Legado" PWA (Vite + React + TypeScript + Tailwind), add typed JSON content data, and ship a working Tab Bar navigating 6 routes with a fully built Início screen (the other 5 are placeholders).
 
@@ -34,7 +35,7 @@
 - Produces: Tailwind color tokens `bg-app`, `text-primary`, `bg-primary`, `text-accent`, `bg-accent`, `text-alert`, `bg-alert` (mapped to the CSS vars above) — later tasks style with these classes.
 - Produces: `resolveJsonModule: true` + `esModuleInterop: true` in `tsconfig.json` — Task 3/4 import JSON as typed modules.
 
-- [ ] **Step 1: Create `package.json`**
+- [x] **Step 1: Create `package.json`**
 
 ```json
 {
@@ -66,7 +67,7 @@
 }
 ```
 
-- [ ] **Step 2: Create `tsconfig.json`**
+- [x] **Step 2: Create `tsconfig.json`**
 
 ```json
 {
@@ -93,7 +94,7 @@
 }
 ```
 
-- [ ] **Step 3: Create `tsconfig.node.json`**
+- [x] **Step 3: Create `tsconfig.node.json`**
 
 ```json
 {
@@ -108,7 +109,7 @@
 }
 ```
 
-- [ ] **Step 4: Create `vite.config.ts`**
+- [x] **Step 4: Create `vite.config.ts`**
 
 ```ts
 import { defineConfig } from 'vite';
@@ -139,7 +140,7 @@ export default defineConfig({
 });
 ```
 
-- [ ] **Step 5: Create `index.html`**
+- [x] **Step 5: Create `index.html`**
 
 ```html
 <!doctype html>
@@ -165,7 +166,7 @@ export default defineConfig({
 </html>
 ```
 
-- [ ] **Step 6: Create `tailwind.config.js`**
+- [x] **Step 6: Create `tailwind.config.js`**
 
 ```js
 /** @type {import('tailwindcss').Config} */
@@ -192,7 +193,7 @@ export default {
 };
 ```
 
-- [ ] **Step 7: Create `postcss.config.js`**
+- [x] **Step 7: Create `postcss.config.js`**
 
 ```js
 export default {
@@ -203,7 +204,7 @@ export default {
 };
 ```
 
-- [ ] **Step 8: Create `src/index.css`**
+- [x] **Step 8: Create `src/index.css`**
 
 ```css
 @tailwind base;
@@ -245,7 +246,7 @@ h3 {
 }
 ```
 
-- [ ] **Step 9: Create `src/main.tsx`**
+- [x] **Step 9: Create `src/main.tsx`**
 
 ```tsx
 import React from 'react';
@@ -260,7 +261,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 );
 ```
 
-- [ ] **Step 10: Create temporary `src/App.tsx`** (replaced in Task 5)
+- [x] **Step 10: Create temporary `src/App.tsx`** (replaced in Task 5)
 
 ```tsx
 export default function App() {
@@ -268,7 +269,7 @@ export default function App() {
 }
 ```
 
-- [ ] **Step 11: Create `.gitignore`**
+- [x] **Step 11: Create `.gitignore`**
 
 ```
 node_modules
@@ -278,12 +279,12 @@ dist-ssr
 .DS_Store
 ```
 
-- [ ] **Step 12: Install dependencies and verify dev server boots**
+- [x] **Step 12: Install dependencies and verify dev server boots**
 
 Run: `npm install && npm run dev -- --port 5173 &` then `curl -s http://localhost:5173 | grep -q "Meu Legado" && echo OK`
 Expected: `OK` printed, no install errors. Stop the dev server after checking.
 
-- [ ] **Step 13: Commit**
+- [x] **Step 13: Commit**
 
 ```bash
 git add package.json tsconfig.json tsconfig.node.json vite.config.ts index.html tailwind.config.js postcss.config.js src/index.css src/main.tsx src/App.tsx .gitignore package-lock.json
@@ -302,7 +303,7 @@ git commit -m "chore: scaffold Vite + React + TS + Tailwind + PWA plugin"
 - Consumes: nothing (pure type definitions).
 - Produces: `ConteudoData`, `CategoriaCondutas`, `Conduta`, `Situacao`, `FraseCategoria`, `FaixaCusto`, `Premio` (from `conteudo.ts`); `FaixasEtariasData`, `FaixaEtaria` (from `faixasEtarias.ts`) — consumed by Task 3's JSON (structurally) and Task 4's hooks.
 
-- [ ] **Step 1: Create `src/types/conteudo.ts`**
+- [x] **Step 1: Create `src/types/conteudo.ts`**
 
 ```ts
 export interface Conduta {
@@ -352,7 +353,7 @@ export interface ConteudoData {
 }
 ```
 
-- [ ] **Step 2: Create `src/types/faixasEtarias.ts`**
+- [x] **Step 2: Create `src/types/faixasEtarias.ts`**
 
 ```ts
 export interface FaixaEtaria {
@@ -372,12 +373,12 @@ export interface FaixasEtariasData {
 }
 ```
 
-- [ ] **Step 3: Verify types compile standalone**
+- [x] **Step 3: Verify types compile standalone**
 
 Run: `npx tsc --noEmit`
 Expected: no errors (files aren't imported anywhere yet, but must parse cleanly).
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add src/types/conteudo.ts src/types/faixasEtarias.ts
@@ -396,7 +397,7 @@ git commit -m "feat: add TypeScript types for content and faixas etárias JSON"
 - Consumes: shape defined by `ConteudoData` and `FaixasEtariasData` (Task 2) — structure must match exactly since Task 4 imports these with `resolveJsonModule` and casts to those types.
 - Produces: the actual data every later screen reads through the Task 4 hooks.
 
-- [ ] **Step 1: Create `src/data/raizes-conteudo.json`**
+- [x] **Step 1: Create `src/data/raizes-conteudo.json`**
 
 ```json
 {
@@ -640,7 +641,7 @@ git commit -m "feat: add TypeScript types for content and faixas etárias JSON"
 }
 ```
 
-- [ ] **Step 2: Create `src/data/raizes-faixas-etarias.json`**
+- [x] **Step 2: Create `src/data/raizes-faixas-etarias.json`**
 
 ```json
 {
@@ -784,7 +785,7 @@ git commit -m "feat: add TypeScript types for content and faixas etárias JSON"
 }
 ```
 
-- [ ] **Step 3: Verify JSON structurally matches the types**
+- [x] **Step 3: Verify JSON structurally matches the types**
 
 Create a temporary `src/data/_check.ts` with:
 
@@ -802,7 +803,7 @@ console.log(c.categoriasCondutas.length, f.faixas.length);
 Run: `npx tsc --noEmit`
 Expected: no type errors. Then delete `src/data/_check.ts` (it was only for verification).
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add src/data/raizes-conteudo.json src/data/raizes-faixas-etarias.json
@@ -822,7 +823,7 @@ git commit -m "feat: populate base content JSON (condutas, situações, frases, 
 - Consumes: `ConteudoData`, `FaixasEtariasData` types (Task 2); `raizes-conteudo.json`, `raizes-faixas-etarias.json` (Task 3).
 - Produces: `useConteudo(): ConteudoData`, `useFaixasEtarias(): FaixasEtariasData`, `useMuralData(): { semanaAtual: string; marcasPorConduta: Record<string, boolean[]>; marcarEstrela(condutaId: string, diaIndex: number): void; calcularTotalSemana(): number }` — available for the future Mural screen; not consumed by Início/placeholders in this plan.
 
-- [ ] **Step 1: Create `src/hooks/useConteudo.ts`**
+- [x] **Step 1: Create `src/hooks/useConteudo.ts`**
 
 ```ts
 import conteudoJson from '../data/raizes-conteudo.json';
@@ -835,7 +836,7 @@ export function useConteudo(): ConteudoData {
 }
 ```
 
-- [ ] **Step 2: Create `src/hooks/useFaixasEtarias.ts`**
+- [x] **Step 2: Create `src/hooks/useFaixasEtarias.ts`**
 
 ```ts
 import faixasJson from '../data/raizes-faixas-etarias.json';
@@ -848,7 +849,7 @@ export function useFaixasEtarias(): FaixasEtariasData {
 }
 ```
 
-- [ ] **Step 3: Create `src/hooks/useMuralData.ts`**
+- [x] **Step 3: Create `src/hooks/useMuralData.ts`**
 
 ```ts
 import { useCallback, useEffect, useState } from 'react';
@@ -917,12 +918,12 @@ export function useMuralData() {
 }
 ```
 
-- [ ] **Step 4: Verify hooks compile**
+- [x] **Step 4: Verify hooks compile**
 
 Run: `npx tsc --noEmit`
 Expected: no errors.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/hooks/useConteudo.ts src/hooks/useFaixasEtarias.ts src/hooks/useMuralData.ts
@@ -942,7 +943,7 @@ git commit -m "feat: add data hooks for content, faixas etárias and mural (loca
 - Consumes: `react-router-dom` (`BrowserRouter`, `Routes`, `Route`, `Outlet`, `NavLink`).
 - Produces: route paths `/`, `/faixas-etarias`, `/situacoes`, `/mural`, `/premios`, `/frases` — consumed by Task 6 screens, which are registered here as route elements.
 
-- [ ] **Step 1: Create `src/components/layout/TabBar.tsx`**
+- [x] **Step 1: Create `src/components/layout/TabBar.tsx`**
 
 ```tsx
 import { NavLink } from 'react-router-dom';
@@ -993,7 +994,7 @@ export function TabBar() {
 }
 ```
 
-- [ ] **Step 2: Create `src/components/layout/AppLayout.tsx`**
+- [x] **Step 2: Create `src/components/layout/AppLayout.tsx`**
 
 ```tsx
 import { Outlet } from 'react-router-dom';
@@ -1014,7 +1015,7 @@ export function AppLayout() {
 }
 ```
 
-- [ ] **Step 3: Replace `src/App.tsx`**
+- [x] **Step 3: Replace `src/App.tsx`**
 
 ```tsx
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -1046,7 +1047,7 @@ export default function App() {
 
 This task depends on the screen files from Task 6 to exist for `tsc`/`vite` to resolve imports — create Task 6's files before verifying this task's build (both are done in the same session; verification happens at the end of Task 6).
 
-- [ ] **Step 4: Commit** (bundled with Task 6, since `App.tsx` doesn't compile until the screens exist — see Task 6 Step 8)
+- [x] **Step 4: Commit** (bundled with Task 6, since `App.tsx` doesn't compile until the screens exist — see Task 6 Step 8)
 
 ---
 
@@ -1064,7 +1065,7 @@ This task depends on the screen files from Task 6 to exist for `tsc`/`vite` to r
 - Consumes: none beyond React — all six are self-contained, registered as route elements by Task 5's `App.tsx`.
 - Produces: nothing consumed further (leaf components).
 
-- [ ] **Step 1: Create `src/screens/InicioScreen.tsx`**
+- [x] **Step 1: Create `src/screens/InicioScreen.tsx`**
 
 ```tsx
 interface Fundamento {
@@ -1127,7 +1128,7 @@ export function InicioScreen() {
 }
 ```
 
-- [ ] **Step 2: Create a shared placeholder pattern — `src/screens/FaixasEtariasScreen.tsx`**
+- [x] **Step 2: Create a shared placeholder pattern — `src/screens/FaixasEtariasScreen.tsx`**
 
 ```tsx
 export function FaixasEtariasScreen() {
@@ -1144,7 +1145,7 @@ export function FaixasEtariasScreen() {
 }
 ```
 
-- [ ] **Step 3: Create `src/screens/SituacoesScreen.tsx`**
+- [x] **Step 3: Create `src/screens/SituacoesScreen.tsx`**
 
 ```tsx
 export function SituacoesScreen() {
@@ -1161,7 +1162,7 @@ export function SituacoesScreen() {
 }
 ```
 
-- [ ] **Step 4: Create `src/screens/MuralScreen.tsx`**
+- [x] **Step 4: Create `src/screens/MuralScreen.tsx`**
 
 ```tsx
 export function MuralScreen() {
@@ -1178,7 +1179,7 @@ export function MuralScreen() {
 }
 ```
 
-- [ ] **Step 5: Create `src/screens/PremiosScreen.tsx`**
+- [x] **Step 5: Create `src/screens/PremiosScreen.tsx`**
 
 ```tsx
 export function PremiosScreen() {
@@ -1194,7 +1195,7 @@ export function PremiosScreen() {
 }
 ```
 
-- [ ] **Step 6: Create `src/screens/FrasesScreen.tsx`**
+- [x] **Step 6: Create `src/screens/FrasesScreen.tsx`**
 
 ```tsx
 export function FrasesScreen() {
@@ -1211,12 +1212,12 @@ export function FrasesScreen() {
 }
 ```
 
-- [ ] **Step 7: Verify full type-check**
+- [x] **Step 7: Verify full type-check**
 
 Run: `npx tsc --noEmit`
 Expected: no errors across `App.tsx`, layout, and all screens.
 
-- [ ] **Step 8: Commit (bundles Task 5 + Task 6, since they only compile together)**
+- [x] **Step 8: Commit (bundles Task 5 + Task 6, since they only compile together)**
 
 ```bash
 git add src/App.tsx src/components/layout/AppLayout.tsx src/components/layout/TabBar.tsx src/screens
@@ -1236,7 +1237,7 @@ git commit -m "feat: add router, AppLayout, TabBar and 6 screens (Início comple
 - Consumes: paths referenced in `vite.config.ts`'s `VitePWA({ manifest: { icons: [...] } })` from Task 1.
 - Produces: physical icon files served at `/icons/icon-192.png` and `/icons/icon-512.png`.
 
-- [ ] **Step 1: Generate placeholder icons with a small Node script**
+- [x] **Step 1: Generate placeholder icons with a small Node script**
 
 Create a temporary script `scripts/gen-icons.mjs`:
 
@@ -1270,7 +1271,7 @@ console.log('SVG placeholder icons written.');
 Run: `node scripts/gen-icons.mjs`
 Expected: `public/icons/icon-192.svg` and `public/icons/icon-512.svg` created.
 
-- [ ] **Step 2: Point the manifest and HTML at the SVG icons**
+- [x] **Step 2: Point the manifest and HTML at the SVG icons**
 
 SVG is a valid `manifest.json` icon type and avoids needing a PNG-encoding dependency for a placeholder. Update `vite.config.ts`'s `VitePWA` call (from Task 1) so `includeAssets` and `manifest.icons` reference `.svg` instead of `.png`:
 
@@ -1293,16 +1294,16 @@ SVG is a valid `manifest.json` icon type and avoids needing a PNG-encoding depen
 
 Update `index.html`'s `<link rel="icon">` and `<link rel="apple-touch-icon">` to point at `/icons/icon-192.svg` (note: iOS Safari does not support SVG for `apple-touch-icon` in all versions — acceptable for this placeholder, to be swapped for a real PNG icon later per the spec's "fora de escopo" note... actually this IS in scope per the spec, so keep it simple and correct now).
 
-- [ ] **Step 3: Remove the generator script (one-off, not part of the app)**
+- [x] **Step 3: Remove the generator script (one-off, not part of the app)**
 
 Run: `rm scripts/gen-icons.mjs && rmdir scripts 2>/dev/null || true` (bash) — keep only the generated SVG output under `public/icons/`.
 
-- [ ] **Step 4: Verify build**
+- [x] **Step 4: Verify build**
 
 Run: `npm run build`
 Expected: build succeeds, `dist/manifest.webmanifest` (or equivalent PWA output) references the SVG icons, no missing-asset warnings.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add public/icons/icon-192.svg public/icons/icon-512.svg vite.config.ts index.html
@@ -1315,17 +1316,17 @@ git commit -m "feat: add placeholder PWA icons and wire manifest"
 
 **Files:** none created — verification only.
 
-- [ ] **Step 1: Full type-check**
+- [x] **Step 1: Full type-check**
 
 Run: `npx tsc --noEmit`
 Expected: no errors.
 
-- [ ] **Step 2: Production build**
+- [x] **Step 2: Production build**
 
 Run: `npm run build`
 Expected: build completes, no errors, `dist/` populated including PWA manifest and service worker.
 
-- [ ] **Step 3: Manual dev smoke test**
+- [x] **Step 3: Manual dev smoke test**
 
 Run: `npm run dev` and open the printed local URL in a browser at a mobile viewport (or resize dev tools to ~390px wide).
 Check:
@@ -1335,7 +1336,7 @@ Check:
 - Toggling OS-level dark mode changes background/text colors per the dark CSS vars.
 - Stop the dev server when done.
 
-- [ ] **Step 4: Commit any final fixes found during manual check**
+- [x] **Step 4: Commit any final fixes found during manual check**
 
 If the manual check surfaces issues, fix them in the relevant file from Tasks 1–7 and commit with a message describing the fix (e.g., `fix: correct TabBar active-state contrast in dark mode`).
 
