@@ -42,108 +42,378 @@
   ],
   "situacoes": [
     {
-      "id": "birra-publico",
-      "titulo": "Birra em lugar público",
+      "id": "birra-2-5",
+      "titulo": "Birra e crise de frustração",
       "categoria": "Regulação emocional",
-      "porque": "A birra costuma ser uma crise de regulação emocional, não uma provocação. O cérebro infantil ainda não tem maturidade para lidar com frustração em ambientes cheios de estímulo.",
-      "passosPraticos": [
-        "Mantenha a calma e abaixe-se na altura da criança.",
-        "Valide o sentimento antes de corrigir o comportamento.",
-        "Ofereça uma escolha simples para devolver senso de controle.",
-        "Se necessário, retire a criança do ambiente até acalmar."
+      "faixasEtarias": ["2-5"],
+      "oQueEstaAcontecendo": "O córtex pré-frontal, responsável por controlar impulsos e regular emoções, ainda está em formação nessa idade. Quando a criança é tomada por uma frustração, o cérebro emocional assume o controle antes que a razão consiga intervir — por isso a birra parece 'fora de controle', e não é manha ou manipulação deliberada.",
+      "passoAPasso": [
+        "Abaixe-se para ficar na altura dos olhos da criança e fale em tom calmo e baixo.",
+        "Nomeie o sentimento antes de qualquer explicação: 'Você está muito frustrado agora.'",
+        "Espere a crise diminuir de intensidade antes de tentar dialogar ou ensinar algo.",
+        "Ofereça um abraço ou proximidade física se a criança aceitar, sem forçar contato.",
+        "Depois que ela acalmar, converse brevemente sobre o que aconteceu, sem sermão longo."
       ],
-      "frasePraUsar": "Eu vejo que você está bravo. Vamos respirar juntos antes de continuar."
+      "oQueNaoFazer": [
+        "Gritar mais alto que a criança ou tentar 'vencer' a birra no volume.",
+        "Ceder ao pedido só para a birra parar — isso ensina que birra funciona.",
+        "Ridicularizar ou dizer 'só bebê chora assim'.",
+        "Ignorar completamente a criança num local que não seja seguro."
+      ],
+      "frasePronta": "Eu vejo que você está muito bravo porque queria continuar brincando. Está tudo bem sentir isso. Vou ficar aqui com você até passar.",
+      "prevencaoLongoPrazo": "Mantenha rotinas previsíveis e avise transições com antecedência ('daqui a 5 minutos vamos guardar os brinquedos'). Quanto mais previsível o dia, menos gatilhos de frustração inesperada."
     },
     {
-      "id": "recusa-licao",
-      "titulo": "Recusa em fazer a lição de casa",
-      "categoria": "Rotina",
-      "porque": "Recusa costuma esconder cansaço, dificuldade real com o conteúdo ou excesso de atividades no dia.",
-      "passosPraticos": [
-        "Pergunte o que está difícil antes de insistir.",
-        "Divida a tarefa em partes menores.",
-        "Combine um horário fixo e prever pequenas pausas.",
-        "Elogie o esforço, não só o resultado."
+      "id": "frustracao-6-9",
+      "titulo": "Explosões de frustração na idade escolar",
+      "categoria": "Regulação emocional",
+      "faixasEtarias": ["6-9"],
+      "oQueEstaAcontecendo": "Nessa fase a criança já entende regras sociais, mas sua tolerância à frustração ainda é limitada, especialmente diante de tarefas escolares difíceis ou perdas em jogos. A frustração pode aparecer como choro, raiva súbita ou frases do tipo 'eu não sei fazer nada'.",
+      "passoAPasso": [
+        "Reconheça o esforço antes do resultado: 'Eu vi que você tentou bastante.'",
+        "Pergunte o que especificamente está difícil, em vez de assumir a causa.",
+        "Divida a tarefa ou o problema em partes menores e alcançáveis.",
+        "Ofereça uma pausa curta antes de retomar, se a frustração estiver muito alta.",
+        "Celebre pequenos progressos, não só o resultado final."
       ],
-      "frasePraUsar": "Vamos fazer só a primeira parte agora e depois decidir o resto juntos."
+      "oQueNaoFazer": [
+        "Fazer a tarefa pela criança só para 'resolver logo'.",
+        "Comparar com irmãos ou colegas que 'conseguem fácil'.",
+        "Minimizar dizendo 'isso não é motivo para chorar'.",
+        "Insistir sem pausa quando a frustração já está no limite."
+      ],
+      "frasePronta": "Essa parte está mesmo difícil. Vamos tentar dividir em pedacinhos menores? Você não precisa resolver tudo de uma vez.",
+      "prevencaoLongoPrazo": "Elogie o processo e a persistência em vez de só o resultado ou o talento — isso constrói tolerância à frustração ao longo do tempo (mentalidade de crescimento)."
     },
     {
-      "id": "brigas-irmaos",
-      "titulo": "Brigas entre irmãos",
-      "categoria": "Convivência",
-      "porque": "Disputas entre irmãos são normais e fazem parte do aprendizado de negociação e limites.",
-      "passosPraticos": [
-        "Não tome partido antes de ouvir os dois lados.",
-        "Ajude cada um a nomear o que sentiu.",
-        "Guie-os a proporem uma solução juntos.",
-        "Evite comparações entre os irmãos."
+      "id": "oscilacao-emocional-pre-adolescencia",
+      "titulo": "Oscilação de humor e irritabilidade",
+      "categoria": "Regulação emocional",
+      "faixasEtarias": ["10-12", "13-15"],
+      "oQueEstaAcontecendo": "A puberdade traz mudanças hormonais que afetam diretamente a regulação emocional, junto com um cérebro social mais sensível a rejeição e comparação. Respostas curtas, portas batendo e irritação aparentemente sem motivo fazem parte do desenvolvimento típico, não são sinal de mau caráter.",
+      "passoAPasso": [
+        "Dê espaço físico e emocional antes de insistir em conversar.",
+        "Evite reagir no mesmo tom de irritação — modele a calma que você quer ver.",
+        "Ofereça-se para conversar mais tarde: 'Quando quiser conversar, estou aqui.'",
+        "Valide o sentimento sem necessariamente concordar com a atitude.",
+        "Retome o assunto num momento neutro, longe do pico emocional."
       ],
-      "frasePraUsar": "Cada um vai contar o que aconteceu, sem interromper o outro."
+      "oQueNaoFazer": [
+        "Levar para o lado pessoal cada resposta grossa.",
+        "Exigir explicação imediata para a mudança de humor.",
+        "Dizer 'você está exagerando' ou 'isso é coisa de adolescente'.",
+        "Punir a expressão do sentimento em vez do comportamento inadequado."
+      ],
+      "frasePronta": "Percebo que você está irritado. Não precisa me contar agora, mas quando quiser conversar eu estou por perto.",
+      "prevencaoLongoPrazo": "Construa antecipadamente momentos de conexão sem cobrança (um passeio, uma atividade em comum) para que o vínculo já esteja fortalecido quando as fases mais difíceis do humor aparecerem."
     },
     {
-      "id": "mentiras",
-      "titulo": "Mentiras",
-      "categoria": "Confiança",
-      "porque": "Mentir nessa fase costuma ser medo de punição ou de decepcionar, não caráter formado.",
-      "passosPraticos": [
-        "Reaja com calma, sem exagerar a punição.",
-        "Explique por que a verdade importa para a confiança entre vocês.",
-        "Valorize quando a criança conta a verdade, mesmo sobre algo errado.",
-        "Evite armadilhas do tipo 'eu sei que você fez, admite'."
+      "id": "ansiedade-futuro-16-18",
+      "titulo": "Frustração e ansiedade sobre o futuro",
+      "categoria": "Regulação emocional",
+      "faixasEtarias": ["16-18"],
+      "oQueEstaAcontecendo": "Decisões sobre vestibular, carreira e independência ativam uma sobrecarga real de cobrança interna e externa. Aqui a frustração costuma vir disfarçada de irritabilidade, procrastinação ou apatia, não de birra visível.",
+      "passoAPasso": [
+        "Pergunte como ele está se sentindo antes de perguntar sobre notas ou planos.",
+        "Compartilhe que incerteza sobre o futuro é normal, inclusive na sua própria experiência.",
+        "Ajude a quebrar decisões grandes em passos menores e prazos realistas.",
+        "Evite comparar com o caminho de outros jovens da família ou amigos.",
+        "Ofereça apoio prático (pesquisa, conversa com profissionais) sem assumir o controle da decisão."
       ],
-      "frasePraUsar": "Obrigado por me contar a verdade. Vamos resolver isso juntos."
+      "oQueNaoFazer": [
+        "Tratar a ansiedade como 'frescura' ou falta de esforço.",
+        "Pressionar por uma decisão definitiva antes que ele esteja pronto.",
+        "Comparar constantemente com o que você fez na idade dele.",
+        "Assumir o controle total das decisões 'para ajudar'."
+      ],
+      "frasePronta": "Eu sei que decidir o futuro agora parece enorme. Você não precisa ter tudo resolvido hoje — podemos ir passo a passo.",
+      "prevencaoLongoPrazo": "Desde cedo, valorize o processo de tentar e errar mais do que o resultado perfeito, para que decisões grandes não sejam vividas como 'tudo ou nada'."
     },
     {
-      "id": "excesso-telas",
-      "titulo": "Uso excessivo de telas",
-      "categoria": "Rotina",
-      "porque": "Telas ativam recompensa rápida no cérebro; sem limites claros, a criança não desenvolve autorregulação sozinha.",
-      "passosPraticos": [
-        "Combine o tempo de tela antes de começar, não durante.",
-        "Use um alarme visual para o fim do tempo.",
-        "Ofereça uma atividade concreta para depois da tela.",
-        "Seja consistente mesmo quando for mais fácil ceder."
+      "id": "testando-limites-2-5",
+      "titulo": "Testando limites e regras simples",
+      "categoria": "Limites e regras",
+      "faixasEtarias": ["2-5"],
+      "oQueEstaAcontecendo": "Testar limites é como a criança aprende onde está a fronteira do que é permitido — é parte normal e saudável do desenvolvimento, não desafio deliberado à autoridade dos pais.",
+      "passoAPasso": [
+        "Estabeleça poucas regras, claras e consistentes (menos é mais nessa idade).",
+        "Explique o limite em uma frase curta e concreta.",
+        "Ofereça uma alternativa aceitável dentro do limite.",
+        "Mantenha a mesma resposta todas as vezes que a regra for testada.",
+        "Reconheça quando a criança respeitar o combinado, mesmo que pequeno."
       ],
-      "frasePraUsar": "Faltam cinco minutos para o tempo de tela acabar, como combinamos."
+      "oQueNaoFazer": [
+        "Mudar a regra dependendo do humor do dia ou do cansaço.",
+        "Ameaçar consequências que você não vai cumprir.",
+        "Fazer longas explicações que a criança ainda não consegue processar.",
+        "Ceder depois de dizer não, só para evitar o choro."
+      ],
+      "frasePronta": "Eu sei que você queria continuar. A regra é guardar os brinquedos antes do banho. Você quer guardar os carrinhos ou os blocos primeiro?",
+      "prevencaoLongoPrazo": "Combine as regras da casa com antecedência entre os adultos responsáveis, para que a criança sempre receba a mesma resposta de todos."
     },
     {
-      "id": "dificuldade-dormir",
-      "titulo": "Dificuldade para dormir",
-      "categoria": "Rotina",
-      "porque": "Ansiedade, excesso de estímulo antes de dormir ou rotina inconsistente atrapalham o sono.",
-      "passosPraticos": [
-        "Crie uma rotina fixa e previsível antes de dormir.",
-        "Desligue telas pelo menos 30 minutos antes.",
-        "Converse sobre o dia para esvaziar preocupações.",
-        "Mantenha o mesmo horário todos os dias, inclusive fins de semana."
+      "id": "questionando-autoridade-pre-adolescencia",
+      "titulo": "Questionando regras e autoridade",
+      "categoria": "Limites e regras",
+      "faixasEtarias": ["10-12", "13-15"],
+      "oQueEstaAcontecendo": "O pensamento abstrato em desenvolvimento permite que o pré-adolescente questione o 'porquê' das regras, não apenas as obedeça. Questionar não é sinônimo de desrespeito — é sinal de raciocínio mais maduro em formação.",
+      "passoAPasso": [
+        "Explique o motivo real por trás da regra, não apenas 'porque eu disse'.",
+        "Ouça o ponto de vista dele antes de reafirmar o limite.",
+        "Distinga o que é negociável (horário, forma) do que não é (segurança).",
+        "Envolva-o na criação de algumas regras da casa quando possível.",
+        "Mantenha a calma mesmo se o tom dele for desafiador."
       ],
-      "frasePraUsar": "Vamos fazer nossa rotina de sempre: banho, história e luz apagada."
+      "oQueNaoFazer": [
+        "Responder 'porque eu sou seu pai/mãe e mando' sem explicação.",
+        "Tratar toda pergunta como desobediência.",
+        "Ceder toda vez que ele insiste, o que ensina a insistir mais.",
+        "Discutir a regra na frente de outras pessoas para 'não perder a autoridade'."
+      ],
+      "frasePronta": "Eu entendo que você ache essa regra chata. O motivo é sua segurança à noite. Podemos conversar sobre o horário, mas ele existe por esse motivo.",
+      "prevencaoLongoPrazo": "Revise as regras da casa periodicamente junto com ele, ajustando o que já não faz mais sentido para a idade — isso mostra que regras evoluem com a confiança conquistada."
     },
     {
-      "id": "desobediencia-regras",
-      "titulo": "Desobediência a regras combinadas",
-      "categoria": "Limites",
-      "porque": "Testar limites é parte do desenvolvimento; a criança verifica se a regra realmente vale.",
-      "passosPraticos": [
-        "Relembre a regra combinada com calma, sem sermão longo.",
-        "Aplique a consequência natural já combinada, sem ameaças novas.",
-        "Seja consistente: a mesma regra vale todos os dias.",
-        "Reconheça quando a criança cumprir o combinado."
+      "id": "negociando-regras-16-18",
+      "titulo": "Negociação de regras com quase adultos",
+      "categoria": "Limites e regras",
+      "faixasEtarias": ["16-18"],
+      "oQueEstaAcontecendo": "Nessa fase, o jovem já assume responsabilidades quase adultas (trabalho, estudo, relacionamentos), e regras impostas sem diálogo tendem a gerar afastamento em vez de respeito.",
+      "passoAPasso": [
+        "Trate a conversa como uma negociação entre duas pessoas, não uma ordem.",
+        "Explique as preocupações reais por trás do limite (segurança, confiança).",
+        "Peça a opinião dele sobre o que seria um acordo razoável.",
+        "Defina consequências combinadas juntos, não impostas unilateralmente.",
+        "Reavalie o acordo depois de um tempo, ajustando conforme a confiança."
       ],
-      "frasePraUsar": "A gente combinou isso antes. Vamos cumprir o que ficou combinado."
+      "oQueNaoFazer": [
+        "Comparar a liberdade dele com a que você tinha (ou não tinha) na idade dele.",
+        "Impor a regra sem abrir espaço para negociação nenhuma.",
+        "Punir com 'liberdade a menos' como primeira resposta a qualquer erro.",
+        "Tratá-lo como criança em decisões que ele já é capaz de assumir."
+      ],
+      "frasePronta": "Eu confio em você, mas fico preocupado com isso. Que tal combinarmos um horário que funcione para os dois?",
+      "prevencaoLongoPrazo": "Vá ampliando gradualmente a autonomia ao longo da adolescência, para que aos 16-18 anos as regras já sejam fruto de um histórico de confiança construída, não de controle repentino."
     },
     {
-      "id": "ciumes-irmao",
-      "titulo": "Ciúmes de um novo irmão",
-      "categoria": "Convivência",
-      "porque": "A chegada de um irmão pode ser vivida como perda de espaço e atenção exclusiva.",
-      "passosPraticos": [
-        "Reserve um tempo individual só para essa criança.",
-        "Inclua-a em pequenos cuidados com o bebê, se quiser participar.",
-        "Valide o sentimento de ciúmes sem julgar.",
-        "Evite frases como 'você já é grande, não precisa de colo'."
+      "id": "primeiro-contato-telas-2-5",
+      "titulo": "Primeiro contato com telas",
+      "categoria": "Uso de telas",
+      "faixasEtarias": ["2-5"],
+      "oQueEstaAcontecendo": "Telas ativam fortemente o sistema de recompensa do cérebro infantil com estímulos rápidos (cores, sons, mudanças de cena), tornando outras atividades mais lentas — como brincar ou desenhar — menos atraentes em comparação, se o uso não for limitado desde cedo.",
+      "passoAPasso": [
+        "Defina um tempo de tela combinado antes de ligar o aparelho, não depois.",
+        "Prefira conteúdo com ritmo mais lento e sem estímulo excessivo.",
+        "Fique por perto ou assista junto sempre que possível.",
+        "Avise a transição com antecedência: 'Depois desse desenho, vamos desligar.'",
+        "Ofereça imediatamente uma atividade concreta após o tempo de tela."
       ],
-      "frasePraUsar": "Você continua sendo muito importante para mim, do jeito que sempre foi."
+      "oQueNaoFazer": [
+        "Usar a tela como única forma de acalmar a criança em qualquer situação.",
+        "Desligar a tela de surpresa, sem aviso prévio.",
+        "Deixar o tempo de tela sem limite definido 'só dessa vez'.",
+        "Usar tela durante as refeições como hábito diário."
+      ],
+      "frasePronta": "Faltam dois minutinhos para acabar o desenho. Depois vamos brincar com os blocos, tá bom?",
+      "prevencaoLongoPrazo": "Estabeleça uma rotina de tela consistente desde o início (mesmo horário, mesma duração) para que o limite vire hábito natural, não uma discussão diária."
+    },
+    {
+      "id": "tempo-de-tela-jogos-6-9",
+      "titulo": "Tempo de tela e jogos",
+      "categoria": "Uso de telas",
+      "faixasEtarias": ["6-9"],
+      "oQueEstaAcontecendo": "Jogos e vídeos nessa idade já competem por atenção com lição de casa e brincadeiras físicas. A dificuldade em parar de jogar não é birra por birra — jogos são desenhados de propósito para dificultar exatamente esse momento de parar, com recompensas contínuas.",
+      "passoAPasso": [
+        "Combine o tempo de tela junto com a criança antes de começar.",
+        "Use um alarme visual ou sonoro para marcar o fim do tempo.",
+        "Avise com antecedência quando faltar pouco tempo ('faltam 5 minutos').",
+        "Ajude a encontrar um ponto de pausa natural no jogo, não interromper no meio de uma fase.",
+        "Combine consequências claras e consistentes se o tempo não for respeitado."
+      ],
+      "oQueNaoFazer": [
+        "Desligar o aparelho sem aviso no meio de uma partida.",
+        "Aumentar o tempo repetidamente só para evitar o conflito.",
+        "Usar tela extra como recompensa constante por qualquer comportamento.",
+        "Proibir totalmente sem oferecer alternativas de lazer."
+      ],
+      "frasePronta": "Faltam cinco minutos, como combinamos. Procura um ponto para pausar o jogo com calma.",
+      "prevencaoLongoPrazo": "Ofereça alternativas de lazer tão estimulantes quanto possível (esportes, jogos de tabuleiro, atividades ao ar livre) para que a tela não seja a única fonte de diversão disponível."
+    },
+    {
+      "id": "redes-sociais-celular-10-15",
+      "titulo": "Primeiras redes sociais e uso do celular",
+      "categoria": "Uso de telas",
+      "faixasEtarias": ["10-12", "13-15"],
+      "oQueEstaAcontecendo": "O cérebro adolescente é especialmente sensível à aprovação social, o que torna curtidas, comentários e comparação em redes sociais emocionalmente muito mais impactantes do que um adulto costuma perceber à primeira vista.",
+      "passoAPasso": [
+        "Converse sobre redes sociais com curiosidade genuína, não só com desconfiança.",
+        "Combine juntos regras de uso (horários, apps permitidos, privacidade).",
+        "Explique riscos reais (compartilhamento de dados, contato com estranhos) sem alarmismo.",
+        "Acompanhe de forma transparente, avisando que você acompanha, sem espionar às escondidas.",
+        "Esteja disponível para conversar sobre algo desconfortável que ele veja ou receba online."
+      ],
+      "oQueNaoFazer": [
+        "Instalar monitoramento secreto sem o conhecimento do adolescente.",
+        "Proibir totalmente sem diálogo, empurrando o uso para escondido.",
+        "Ridicularizar o interesse dele por redes sociais ou influenciadores.",
+        "Reagir com pânico a qualquer coisa que ele compartilhe, fazendo-o parar de contar."
+      ],
+      "frasePronta": "Quero entender melhor o que você curte nas redes. Vamos combinar juntos algumas regras de uso?",
+      "prevencaoLongoPrazo": "Introduza o tema de segurança digital antes da primeira rede social, não depois de um problema já ter acontecido."
+    },
+    {
+      "id": "autorregulacao-telas-16-18",
+      "titulo": "Autorregulação de telas antes da vida adulta",
+      "categoria": "Uso de telas",
+      "faixasEtarias": ["16-18"],
+      "oQueEstaAcontecendo": "Nessa fase, o objetivo muda de 'controlar o tempo de tela' para 'ajudar a desenvolver autorregulação própria', já que em pouco tempo ele vai gerenciar isso sozinho, sem supervisão direta.",
+      "passoAPasso": [
+        "Converse sobre o impacto real que ele mesmo percebe no sono, humor ou produtividade.",
+        "Proponha metas de uso definidas por ele, não impostas de fora.",
+        "Compartilhe suas próprias estratégias — e dificuldades — com telas, como igual.",
+        "Ofereça ferramentas práticas (apps de tempo de tela) como sugestão, não imposição.",
+        "Reforce progressos e ajustes que ele mesmo perceber precisar fazer."
+      ],
+      "oQueNaoFazer": [
+        "Impor limites de tela como se ele ainda tivesse 10 anos.",
+        "Ignorar o assunto assumindo que 'já é tarde para influenciar'.",
+        "Criticar o uso de tela sem admitir seus próprios hábitos com telas.",
+        "Tratar qualquer uso de tela como sinal de preguiça ou desinteresse."
+      ],
+      "frasePronta": "Como você tem sentido seu próprio uso de tela ultimamente? Percebe algum impacto no sono ou na disposição?",
+      "prevencaoLongoPrazo": "Modele bons hábitos de uso de tela em casa — a forma como os adultos usam o celular à mesa ou antes de dormir ensina mais do que qualquer regra."
+    },
+    {
+      "id": "conflitos-amizade-mentiras-6-12",
+      "titulo": "Conflitos de amizade e pequenas mentiras",
+      "categoria": "Amizades e honestidade",
+      "faixasEtarias": ["6-9", "10-12"],
+      "oQueEstaAcontecendo": "Mentiras nessa fase costumam nascer do medo de decepcionar ou de ser punido, não de má-caráter formado. Conflitos de amizade, por sua vez, são o principal 'laboratório social' onde a criança aprende negociação e empatia.",
+      "passoAPasso": [
+        "Reaja com calma quando perceber uma mentira, sem gritar ou expor a criança.",
+        "Pergunte o que ela tinha medo que acontecesse se contasse a verdade.",
+        "Valorize explicitamente quando ela contar a verdade, mesmo sobre algo errado.",
+        "Nos conflitos de amizade, ouça a versão dela sem julgar o amigo antes de entender.",
+        "Ajude a pensar em como reparar a situação, como pedir desculpas ou conversar com o amigo."
+      ],
+      "oQueNaoFazer": [
+        "Fazer 'testes' armados do tipo 'eu sei que você fez, admite'.",
+        "Punir a mentira com muito mais peso do que o erro original.",
+        "Tomar partido automático do seu filho em todo conflito com amigos.",
+        "Rotular a criança como 'mentirosa' ou 'encrenqueira'."
+      ],
+      "frasePronta": "Obrigado por me contar a verdade, mesmo sendo difícil. Vamos pensar juntos em como resolver isso.",
+      "prevencaoLongoPrazo": "Construa um ambiente onde errar tenha consequência proporcional e previsível, para que a criança não sinta que precisa mentir para se proteger de uma reação exagerada."
+    },
+    {
+      "id": "privacidade-honestidade-adolescencia-13-18",
+      "titulo": "Privacidade, sigilo e honestidade na adolescência",
+      "categoria": "Amizades e honestidade",
+      "faixasEtarias": ["13-15", "16-18"],
+      "oQueEstaAcontecendo": "Buscar privacidade é parte saudável da formação de identidade própria — não significa, por si só, que algo esteja sendo escondido de forma preocupante. O desafio dos pais é diferenciar privacidade saudável de sinais reais de alerta.",
+      "passoAPasso": [
+        "Respeite espaços de privacidade razoáveis, como o quarto e conversas com amigos.",
+        "Converse abertamente sobre o que preocupa você, em vez de investigar às escondidas.",
+        "Estabeleça com antecedência o que é inegociável por segurança, como avisar onde está à noite.",
+        "Reaja de forma proporcional quando descobrir algo, evitando punições desproporcionais.",
+        "Reforce que ele pode contar qualquer coisa a você sem medo de uma explosão."
+      ],
+      "oQueNaoFazer": [
+        "Revistar o quarto ou o celular às escondidas sem motivo concreto de segurança.",
+        "Tratar todo pedido de privacidade como sinal de que algo está errado.",
+        "Reagir com punição extrema à primeira mentira descoberta, fechando o diálogo futuro.",
+        "Compartilhar segredos dele com outras pessoas da família sem permissão."
+      ],
+      "frasePronta": "Eu respeito sua privacidade. Só preciso saber que você está seguro — podemos combinar o que funciona para os dois?",
+      "prevencaoLongoPrazo": "Construa, desde cedo, um histórico de reações proporcionais aos erros, para que na adolescência ele acredite que contar a verdade compensa mais do que esconder."
+    },
+    {
+      "id": "responsabilidades-domesticas-2-12",
+      "titulo": "Envolvendo a criança nas tarefas de casa",
+      "categoria": "Responsabilidades domésticas",
+      "faixasEtarias": ["2-5", "6-9", "10-12"],
+      "oQueEstaAcontecendo": "Participar de tarefas domésticas ajuda a construir senso de competência e pertencimento à família — crianças que contribuem em casa desde cedo tendem a desenvolver mais autonomia e responsabilidade ao longo da vida.",
+      "passoAPasso": [
+        "Escolha tarefas adequadas à idade e à capacidade motora da criança.",
+        "Ensine a tarefa junto, fazendo a primeira vez com ela, não só explicando.",
+        "Estabeleça uma rotina fixa, com o mesmo dia e horário, para a tarefa.",
+        "Aceite que o resultado não será perfeito no começo — o aprendizado vem antes da perfeição.",
+        "Reconheça a contribuição verbalmente, sem precisar recompensar cada tarefa."
+      ],
+      "oQueNaoFazer": [
+        "Refazer a tarefa na frente da criança porque 'não ficou bom o suficiente'.",
+        "Atribuir tarefas como castigo em vez de contribuição natural.",
+        "Esperar perfeição no primeiro mês de uma tarefa nova.",
+        "Fazer a tarefa por ela sempre que ela reclamar um pouco."
+      ],
+      "frasePronta": "Vamos fazer juntos hoje e depois você vai conseguir sozinho. Toda a casa fica melhor quando cada um ajuda um pouco.",
+      "prevencaoLongoPrazo": "Aumente gradualmente a complexidade das tarefas conforme a idade avança, para que responsabilidade doméstica seja vista como parte natural de crescer, não como imposição repentina na adolescência."
+    },
+    {
+      "id": "primeiras-escolhas-2-5",
+      "titulo": "Primeiras escolhas e frustração ao tentar sozinho",
+      "categoria": "Autonomia e resolução de problemas",
+      "faixasEtarias": ["2-5"],
+      "oQueEstaAcontecendo": "Essa é a fase do 'eu mesmo faço', em que a criança busca autonomia em tarefas simples como vestir-se ou comer sozinha, mas ainda não tem toda a habilidade motora necessária — o que gera frustração real e frequente.",
+      "passoAPasso": [
+        "Dê tempo extra para que ela tente sozinha antes de ajudar.",
+        "Ofereça no máximo duas opções simples para não sobrecarregar a decisão.",
+        "Ajude só a parte mais difícil, deixando o resto para ela completar.",
+        "Elogie a tentativa, independentemente do resultado final.",
+        "Evite corrigir tudo de uma vez — escolha uma coisa para orientar por vez."
+      ],
+      "oQueNaoFazer": [
+        "Fazer por ela só para ganhar tempo, mesmo quando ela quer tentar.",
+        "Rir do resultado, como uma roupa ao contrário, na frente de outras pessoas.",
+        "Oferecer escolhas demais, o que trava a decisão em vez de ajudar.",
+        "Apressar constantemente enquanto ela tenta fazer sozinha."
+      ],
+      "frasePronta": "Você quer tentar vestir sozinho? Eu fico aqui pertinho caso precise de ajuda.",
+      "prevencaoLongoPrazo": "Planeje um tempo extra na rotina diária, como na hora do banho ou de se vestir, especificamente para permitir tentativas de autonomia sem pressa."
+    },
+    {
+      "id": "autonomia-resolucao-problemas-6-15",
+      "titulo": "Resolver problemas sozinho antes de pedir ajuda",
+      "categoria": "Autonomia e resolução de problemas",
+      "faixasEtarias": ["6-9", "10-12", "13-15"],
+      "oQueEstaAcontecendo": "Há uma tendência natural dos pais de resolver rapidamente os problemas dos filhos para evitar sofrimento — mas isso pode impedir o desenvolvimento da capacidade de resolução de problemas, que se constrói justamente ao enfrentar desafios com apoio, não com substituição.",
+      "passoAPasso": [
+        "Quando ele trouxer um problema, pergunte primeiro: 'O que você já pensou em fazer?'",
+        "Ajude a listar possíveis soluções, sem escolher por ele.",
+        "Deixe que ele escolha a solução, mesmo que não seja a que você faria.",
+        "Esteja disponível para apoiar se a solução escolhida não funcionar.",
+        "Comente o processo depois: 'O que você aprendeu tentando isso?'"
+      ],
+      "oQueNaoFazer": [
+        "Resolver o problema por ele assim que ele demonstrar frustração.",
+        "Dizer imediatamente qual é 'a solução certa' sem ouvir as ideias dele.",
+        "Criticar a escolha dele antes mesmo de ela ser testada.",
+        "Intervir com outros adultos, como professores ou amigos, sem envolver a criança no processo."
+      ],
+      "frasePronta": "Isso parece difícil mesmo. O que você já pensou em fazer para resolver?",
+      "prevencaoLongoPrazo": "Celebre tentativas e aprendizados tanto quanto celebra acertos — isso reduz o medo de errar ao tentar resolver algo sozinho."
+    },
+    {
+      "id": "autonomia-decisoes-16-18",
+      "titulo": "Tomada de decisão e responsabilidade pelas escolhas",
+      "categoria": "Autonomia e resolução de problemas",
+      "faixasEtarias": ["16-18"],
+      "oQueEstaAcontecendo": "Nessa fase, decisões têm consequências reais e maiores — dinheiro, estudo, relacionamentos —, e o papel dos pais muda de 'decidir por' para 'apoiar a decidir', preparando para a autonomia adulta plena.",
+      "passoAPasso": [
+        "Pergunte quais opções ele já identificou antes de sugerir as suas.",
+        "Compartilhe sua opinião como uma perspectiva, não como veredito final.",
+        "Ajude a pensar nas consequências práticas de cada opção, sem decidir por ele.",
+        "Permita que ele viva consequências naturais de decisões de menor risco.",
+        "Esteja presente para apoiar caso a decisão não dê certo, sem dizer 'eu avisei'."
+      ],
+      "oQueNaoFazer": [
+        "Impor sua decisão disfarçada de 'sugestão' repetida insistentemente.",
+        "Resgatá-lo de toda consequência natural de uma escolha malfeita.",
+        "Dizer 'eu não avisei' quando algo não dá certo.",
+        "Tratar toda decisão dele como definitiva e irreversível."
+      ],
+      "frasePronta": "Eu vejo os prós e contras assim... mas a decisão final é sua. Estarei aqui de qualquer jeito.",
+      "prevencaoLongoPrazo": "Ofereça decisões de risco crescente e progressivo ao longo da adolescência, para que aos 16-18 anos ele já tenha prática real em decidir e lidar com consequências."
     }
   ],
   "frasesCategorias": [
@@ -151,50 +421,57 @@
       "id": "conflito",
       "nome": "Na hora do conflito",
       "frases": [
-        "Vamos respirar fundo antes de continuar essa conversa.",
-        "Eu entendo que você está chateado com isso.",
-        "Podemos resolver isso com calma, sem gritar.",
-        "Me conta o que aconteceu do seu jeito."
+        { "texto": "Vamos respirar fundo antes de continuar essa conversa.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Eu entendo que você está chateado com isso.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Podemos resolver isso com calma, sem gritar.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Me conta o que aconteceu do seu jeito.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Cada um vai ter a vez de falar, sem interromper.", "faixasEtarias": ["6-9", "10-12"] },
+        { "texto": "Vamos concordar em discordar por agora e retomar depois com mais calma.", "faixasEtarias": ["13-15", "16-18"] }
       ]
     },
     {
       "id": "incentivar",
       "nome": "Para incentivar",
       "frases": [
-        "Eu vi o esforço que você fez nisso.",
-        "Você conseguiu porque não desistiu.",
-        "Estou orgulhoso de como você tentou de novo.",
-        "Isso foi uma escolha muito madura da sua parte."
+        { "texto": "Eu vi o esforço que você fez nisso.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Você conseguiu porque não desistiu.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Estou orgulhoso de como você tentou de novo.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Isso foi uma escolha muito madura da sua parte.", "faixasEtarias": ["10-12", "13-15", "16-18"] },
+        { "texto": "Você é capaz de tentar de novo, eu confio em você.", "faixasEtarias": ["2-5", "6-9"] },
+        { "texto": "Sua responsabilidade nessa decisão mostra o quanto você amadureceu.", "faixasEtarias": ["16-18"] }
       ]
     },
     {
       "id": "validar",
       "nome": "Para validar sentimentos",
       "frases": [
-        "Faz sentido você estar triste com isso.",
-        "É normal sentir raiva às vezes, o que não pode é machucar alguém.",
-        "Eu ficaria frustrado também nessa situação.",
-        "Seu sentimento é válido, vamos pensar juntos no que fazer com ele."
+        { "texto": "Faz sentido você estar triste com isso.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "É normal sentir raiva às vezes, o que não pode é machucar alguém.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Eu ficaria frustrado também nessa situação.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Seu sentimento é válido, vamos pensar juntos no que fazer com ele.", "faixasEtarias": ["10-12", "13-15", "16-18"] },
+        { "texto": "Está tudo bem chorar, eu fico aqui com você.", "faixasEtarias": ["2-5", "6-9"] }
       ]
     },
     {
       "id": "dizer-nao",
       "nome": "Na hora de dizer não",
       "frases": [
-        "Hoje não vai ser possível, e tudo bem você ficar chateado com isso.",
-        "Entendo que você queira, mas a resposta é não.",
-        "Não é sobre gostar ou não, é sobre o que combinamos.",
-        "Podemos conversar sobre isso outra hora, mas agora não."
+        { "texto": "Hoje não vai ser possível, e tudo bem você ficar chateado com isso.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Entendo que você queira, mas a resposta é não.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Não é sobre gostar ou não, é sobre o que combinamos.", "faixasEtarias": ["6-9", "10-12", "13-15"] },
+        { "texto": "Podemos conversar sobre isso outra hora, mas agora não.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "'Não' também é uma resposta completa — não preciso justificar tudo, e te amo do mesmo jeito.", "faixasEtarias": ["13-15", "16-18"] }
       ]
     },
     {
       "id": "reparar",
       "nome": "Para reparar depois de um erro",
       "frases": [
-        "Eu me alterei mais do que deveria, me desculpa.",
-        "Vamos conversar de novo, dessa vez com mais calma.",
-        "Eu também erro às vezes, e está tudo bem aprendermos juntos.",
-        "Obrigado por ter paciência comigo agora há pouco."
+        { "texto": "Eu me alterei mais do que deveria, me desculpa.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Vamos conversar de novo, dessa vez com mais calma.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Eu também erro às vezes, e está tudo bem aprendermos juntos.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Obrigado por ter paciência comigo agora há pouco.", "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "texto": "Eu deveria ter te escutado antes de reagir. Vamos recomeçar essa conversa?", "faixasEtarias": ["10-12", "13-15", "16-18"] }
       ]
     }
   ],
@@ -203,36 +480,36 @@
       "id": "sem-custo",
       "nome": "Sem custo",
       "premios": [
-        { "id": "escolher-filme", "titulo": "Escolher o filme da noite", "descricao": "A criança decide o que a família assiste.", "estrelas": 5 },
-        { "id": "tempo-extra-tela", "titulo": "15 minutos extras de tela", "descricao": "Tempo adicional combinado de tela.", "estrelas": 5 },
-        { "id": "escolher-jantar", "titulo": "Escolher o jantar", "descricao": "A criança escolhe o cardápio do jantar.", "estrelas": 8 }
+        { "id": "escolher-filme", "titulo": "Escolher o filme da noite", "descricao": "A criança decide o que a família assiste.", "estrelas": 5, "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "id": "tempo-extra-tela", "titulo": "15 minutos extras de tela", "descricao": "Tempo adicional combinado de tela.", "estrelas": 5, "faixasEtarias": ["6-9", "10-12", "13-15", "16-18"] },
+        { "id": "escolher-jantar", "titulo": "Escolher o jantar", "descricao": "A criança escolhe o cardápio do jantar.", "estrelas": 8, "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] }
       ]
     },
     {
       "id": "baixo-custo",
       "nome": "Baixo custo",
       "premios": [
-        { "id": "sorvete", "titulo": "Sorvete especial", "descricao": "Uma saída rápida para tomar sorvete.", "estrelas": 15 },
-        { "id": "ida-parque", "titulo": "Ida ao parque", "descricao": "Uma tarde no parque perto de casa.", "estrelas": 15 },
-        { "id": "brinquedo-pequeno", "titulo": "Brinquedo pequeno", "descricao": "Um brinquedo simples e barato.", "estrelas": 20 }
+        { "id": "sorvete", "titulo": "Sorvete especial", "descricao": "Uma saída rápida para tomar sorvete.", "estrelas": 15, "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "id": "ida-parque", "titulo": "Ida ao parque", "descricao": "Uma tarde no parque perto de casa.", "estrelas": 15, "faixasEtarias": ["2-5", "6-9", "10-12"] },
+        { "id": "brinquedo-pequeno", "titulo": "Brinquedo pequeno", "descricao": "Um brinquedo simples e barato.", "estrelas": 20, "faixasEtarias": ["2-5", "6-9", "10-12"] }
       ]
     },
     {
       "id": "medio-custo",
       "nome": "Médio custo",
       "premios": [
-        { "id": "livro-novo", "titulo": "Livro novo", "descricao": "Escolher um livro na livraria.", "estrelas": 30 },
-        { "id": "passeio-especial", "titulo": "Passeio especial", "descricao": "Um passeio como cinema ou parquinho pago.", "estrelas": 40 },
-        { "id": "jogo-tabuleiro", "titulo": "Jogo de tabuleiro", "descricao": "Um jogo novo para a família jogar junto.", "estrelas": 45 }
+        { "id": "livro-novo", "titulo": "Livro novo", "descricao": "Escolher um livro na livraria.", "estrelas": 30, "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "id": "passeio-especial", "titulo": "Passeio especial", "descricao": "Um passeio como cinema ou parquinho pago.", "estrelas": 40, "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "id": "jogo-tabuleiro", "titulo": "Jogo de tabuleiro", "descricao": "Um jogo novo para a família jogar junto.", "estrelas": 45, "faixasEtarias": ["2-5", "6-9", "10-12", "13-15"] }
       ]
     },
     {
       "id": "alto-custo",
       "nome": "Alto custo / especial",
       "premios": [
-        { "id": "dia-especial", "titulo": "Dia especial a dois", "descricao": "Um dia inteiro só com o pai ou a mãe, fazendo o que a criança escolher.", "estrelas": 60 },
-        { "id": "passeio-maior", "titulo": "Passeio maior", "descricao": "Um passeio maior, como parque temático ou viagem curta.", "estrelas": 80 },
-        { "id": "presente-desejado", "titulo": "Presente desejado", "descricao": "Aquele presente que a criança vem pedindo há um tempo.", "estrelas": 100 }
+        { "id": "dia-especial", "titulo": "Dia especial a dois", "descricao": "Um dia inteiro só com o pai ou a mãe, fazendo o que a criança escolher.", "estrelas": 60, "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "id": "passeio-maior", "titulo": "Passeio maior", "descricao": "Um passeio maior, como parque temático ou viagem curta.", "estrelas": 80, "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] },
+        { "id": "presente-desejado", "titulo": "Presente desejado", "descricao": "Aquele presente que a criança vem pedindo há um tempo.", "estrelas": 100, "faixasEtarias": ["2-5", "6-9", "10-12", "13-15", "16-18"] }
       ]
     }
   ]

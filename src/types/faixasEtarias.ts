@@ -1,5 +1,7 @@
+import type { FaixaEtariaId } from './conteudo';
+
 export interface FaixaEtaria {
-  id: string;
+  id: FaixaEtariaId;
   faixa: string;
   titulo: string;
   idadeMin: number;

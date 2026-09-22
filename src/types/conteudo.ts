@@ -1,3 +1,5 @@
+export type FaixaEtariaId = '2-5' | '6-9' | '10-12' | '13-15' | '16-18';
+
 export interface Conduta {
   id: string;
   titulo: string;
@@ -14,15 +16,23 @@ export interface Situacao {
   id: string;
   titulo: string;
   categoria: string;
-  porque: string;
-  passosPraticos: string[];
-  frasePraUsar: string;
+  faixasEtarias: FaixaEtariaId[];
+  oQueEstaAcontecendo: string;
+  passoAPasso: string[];
+  oQueNaoFazer: string[];
+  frasePronta: string;
+  prevencaoLongoPrazo: string;
+}
+
+export interface Frase {
+  texto: string;
+  faixasEtarias: FaixaEtariaId[];
 }
 
 export interface FraseCategoria {
   id: string;
   nome: string;
-  frases: string[];
+  frases: Frase[];
 }
 
 export interface Premio {
@@ -30,6 +40,7 @@ export interface Premio {
   titulo: string;
   descricao: string;
   estrelas: number;
+  faixasEtarias: FaixaEtariaId[];
 }
 
 export interface FaixaCusto {

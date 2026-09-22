@@ -7,24 +7,34 @@
       "idadeMin": 2,
       "idadeMax": 5,
       "fasesDesenvolvimento": [
-        "Desenvolvimento rápido da linguagem e da autonomia motora.",
-        "Ainda não tem maturidade para autorregulação emocional.",
-        "Pensamento concreto: entende regras simples e imediatas."
+        "Desenvolvimento rápido da linguagem e da autonomia motora — a criança quer fazer sozinha muito antes de conseguir fazer bem.",
+        "O córtex pré-frontal (freio dos impulsos e das emoções) ainda está muito imaturo, então birras e frustrações intensas são neurologicamente esperadas, não manha.",
+        "Pensamento concreto: entende regras simples, imediatas e ligadas a algo que pode ver ou tocar, não conceitos abstratos.",
+        "Início do brincar em paralelo e depois cooperativo — dividir e esperar a vez ainda exige esforço real.",
+        "Telas e estímulos rápidos são especialmente cativantes nessa idade, e a criança ainda não tem ferramentas para se autorregular sozinha.",
+        "Começa a imitar tarefas domésticas dos adultos como forma de sentir-se competente e parte da família."
       ],
       "abordagemPais": [
-        "Use frases curtas e diretas.",
-        "Antecipe transições ('daqui a pouco vamos...').",
-        "Ofereça escolhas limitadas para dar senso de controle.",
-        "Mantenha rotinas previsíveis."
+        "Use frases curtas e diretas, evitando explicações longas que a criança ainda não processa.",
+        "Antecipe transições com frases como 'daqui a pouco vamos...' para reduzir crises por surpresa.",
+        "Ofereça escolhas limitadas (no máximo duas) para dar senso de controle sem sobrecarregar a decisão.",
+        "Mantenha rotinas previsíveis de sono, refeição e tela — previsibilidade reduz a frequência de birras.",
+        "Nas crises de frustração, valide o sentimento antes de qualquer correção ou explicação de regra.",
+        "Combine tempo de tela fixo, avisado com antecedência, e ofereça atividade concreta logo depois.",
+        "Envolva a criança em tarefas domésticas simples, como guardar o próprio brinquedo, tratando como contribuição e não como castigo."
       ],
       "desafiosComuns": [
-        "Birras frequentes.",
-        "Dificuldade em esperar a vez.",
-        "Resistência a mudanças de rotina."
+        "Birras frequentes diante de frustração, cansaço ou fome.",
+        "Dificuldade em esperar a vez ou dividir brinquedos.",
+        "Resistência a mudanças de rotina, mesmo pequenas.",
+        "Dificuldade em parar o tempo de tela sem choro.",
+        "Testar repetidamente o mesmo limite para confirmar se ele realmente vale."
       ],
       "frasesGuia": [
         "Eu vejo que você está bravo, vamos respirar juntos.",
-        "Primeiro guardamos os brinquedos, depois vamos brincar lá fora."
+        "Primeiro guardamos os brinquedos, depois vamos brincar lá fora.",
+        "Faltam dois minutinhos para a tela acabar, e depois vamos brincar com os blocos.",
+        "Você quer tentar vestir sozinho? Eu fico aqui pertinho caso precise de ajuda."
       ]
     },
     {
@@ -34,24 +44,39 @@
       "idadeMin": 6,
       "idadeMax": 9,
       "fasesDesenvolvimento": [
-        "Entrada na alfabetização e no pensamento lógico mais estruturado.",
-        "Maior consciência de regras sociais e senso de justiça.",
-        "Começa a comparar-se com colegas."
+        "Entrada na alfabetização e no pensamento lógico mais estruturado, com maior capacidade de seguir regras de várias etapas.",
+        "Maior consciência de regras sociais e um forte senso de justiça ('não é justo!') que passa a guiar boa parte dos conflitos.",
+        "Começa a comparar-se com colegas, o que afeta diretamente a autoestima ligada a desempenho escolar e social.",
+        "A tolerância à frustração ainda é limitada diante de tarefas difíceis ou derrotas em jogos, mas já responde bem a estratégias ensinadas.",
+        "Jogos e vídeos competem ativamente por atenção com lição de casa e brincadeiras físicas — o apelo de telas nessa fase é forte e recorrente.",
+        "Amizades ganham peso emocional real; pequenos conflitos e mentiras por medo de punição são comuns e fazem parte do aprendizado social.",
+        "Capacidade crescente de assumir tarefas domésticas com regularidade e de iniciar a resolver pequenos problemas sozinha."
       ],
       "abordagemPais": [
-        "Explique o porquê das regras, não só o que fazer.",
-        "Envolva a criança na criação de combinados.",
-        "Valorize o esforço tanto quanto o resultado escolar.",
-        "Fique atento a comparações que abalem a autoestima."
+        "Explique o porquê das regras, não só o que fazer — o raciocínio lógico já permite entender motivos.",
+        "Envolva a criança na criação de combinados de casa e de tempo de tela.",
+        "Valorize o esforço e o processo tanto quanto o resultado escolar, para construir tolerância à frustração.",
+        "Fique atento a comparações que abalem a autoestima, inclusive as que você mesmo possa fazer sem perceber.",
+        "Combine o tempo de tela com alarme visual e aviso antecipado de que está acabando.",
+        "Nos conflitos de amizade, ouça a versão da criança sem julgar o amigo antes de entender a situação.",
+        "Reaja com calma a pequenas mentiras, focando em por que a verdade importa em vez de punir com peso excessivo.",
+        "Atribua tarefas domésticas fixas e regulares, aceitando que o resultado não será perfeito no início."
       ],
       "desafiosComuns": [
-        "Resistência à lição de casa.",
-        "Conflitos de justiça ('não é justo').",
-        "Ciúmes e disputas entre irmãos."
+        "Resistência à lição de casa e dificuldade em lidar com tarefas difíceis.",
+        "Conflitos de justiça ('não é justo') com irmãos e colegas.",
+        "Ciúmes e disputas entre irmãos.",
+        "Dificuldade para parar de jogar ou assistir no horário combinado.",
+        "Pequenas mentiras motivadas por medo de decepcionar ou ser punido.",
+        "Ainda depende bastante dos pais para resolver problemas em vez de tentar sozinha primeiro."
       ],
       "frasesGuia": [
         "Vamos combinar juntos como isso vai funcionar.",
-        "O que você acha que seria justo aqui?"
+        "O que você acha que seria justo aqui?",
+        "Essa parte está mesmo difícil. Vamos tentar dividir em pedacinhos menores?",
+        "Faltam cinco minutos, como combinamos. Procura um ponto para pausar com calma.",
+        "Obrigado por me contar a verdade, mesmo sendo difícil.",
+        "Isso parece difícil mesmo. O que você já pensou em fazer para resolver?"
       ]
     },
     {
@@ -61,24 +86,34 @@
       "idadeMin": 10,
       "idadeMax": 12,
       "fasesDesenvolvimento": [
-        "Busca maior independência e privacidade.",
-        "Pensamento abstrato em desenvolvimento.",
-        "Forte influência do grupo de amigos."
+        "Busca maior independência e privacidade, incluindo espaço físico e emocional dentro de casa.",
+        "Pensamento abstrato em desenvolvimento, o que permite questionar o 'porquê' das regras, não apenas obedecê-las.",
+        "Forte influência do grupo de amigos, que começa a competir com a influência dos pais nas decisões do dia a dia.",
+        "Primeiro contato com redes sociais e uso mais autônomo do celular, com alta sensibilidade à aprovação social online.",
+        "Continua desenvolvendo tolerância à frustração e capacidade de resolver problemas, mas ainda se beneficia bastante de apoio dos pais.",
+        "Aumenta a capacidade de assumir responsabilidades domésticas mais complexas e de cumprir combinados com menor supervisão."
       ],
       "abordagemPais": [
-        "Negocie regras em vez de apenas impor.",
-        "Respeite pedidos de privacidade dentro de limites de segurança.",
-        "Converse sobre uso de internet e redes sociais com naturalidade.",
-        "Escute mais e dê sermão menos."
+        "Negocie regras em vez de apenas impor, explicando o motivo real por trás de cada limite.",
+        "Respeite pedidos de privacidade dentro de limites claros de segurança.",
+        "Converse sobre uso de internet e redes sociais com curiosidade genuína, não só desconfiança, e combine regras juntos.",
+        "Escute mais e dê sermão menos, principalmente quando o tom dele parecer desafiador.",
+        "Ao lidar com problemas, pergunte primeiro o que ele já pensou em fazer, antes de sugerir sua própria solução.",
+        "Reveja periodicamente as regras da casa junto com ele, ajustando o que não faz mais sentido para a idade."
       ],
       "desafiosComuns": [
-        "Início do uso de redes sociais e telas.",
-        "Mudanças de humor mais frequentes.",
-        "Questionamento de regras da família."
+        "Início do uso de redes sociais e telas, com maior exposição à comparação social.",
+        "Mudanças de humor mais frequentes, ligadas ao início da puberdade.",
+        "Questionamento de regras e da autoridade dos pais.",
+        "Conflitos de amizade mais complexos, incluindo pequenas mentiras para evitar problemas.",
+        "Ainda testa os limites de responsabilidades domésticas combinadas."
       ],
       "frasesGuia": [
         "Eu confio em você, mas quero entender essa situação junto com você.",
-        "Vamos combinar um limite que faça sentido para os dois."
+        "Vamos combinar um limite que faça sentido para os dois.",
+        "Quero entender melhor o que você curte nas redes. Vamos combinar juntos algumas regras de uso?",
+        "Eu entendo que você ache essa regra chata. O motivo é sua segurança, e podemos conversar sobre a forma.",
+        "Isso parece difícil mesmo. O que você já pensou em fazer para resolver?"
       ]
     },
     {
@@ -88,24 +123,34 @@
       "idadeMin": 13,
       "idadeMax": 15,
       "fasesDesenvolvimento": [
-        "Puberdade e mudanças corporais intensas.",
-        "Formação de identidade própria, distinta dos pais.",
-        "Maior necessidade de autonomia e de ser ouvido."
+        "Puberdade e mudanças corporais intensas, associadas a maior instabilidade emocional real, não fingida.",
+        "Formação de identidade própria, distinta dos pais, muitas vezes expressa por meio de oposição às regras da casa.",
+        "Maior necessidade de autonomia e de ser ouvido como alguém capaz de opinar sobre a própria vida.",
+        "Uso mais intenso de redes sociais e celular, com alta sensibilidade a curtidas, comentários e comparação com colegas.",
+        "Busca de privacidade mais acentuada, que costuma ser saudável e não necessariamente sinal de que algo está sendo escondido.",
+        "Capacidade de tomar decisões mais complexas e de resolver problemas com mais autonomia, ainda com apoio dos pais."
       ],
       "abordagemPais": [
-        "Evite comparações e críticas à aparência.",
-        "Mantenha o diálogo aberto mesmo diante de respostas curtas.",
-        "Estabeleça limites claros com espaço para negociação.",
-        "Esteja presente sem ser invasivo."
+        "Evite comparações e críticas à aparência, especialmente diante de mudanças corporais da puberdade.",
+        "Mantenha o diálogo aberto mesmo diante de respostas curtas ou mau humor aparente.",
+        "Estabeleça limites claros com espaço real de negociação, distinguindo o que é negociável do que não é.",
+        "Esteja presente sem ser invasivo, respeitando privacidade razoável de quarto, celular e conversas com amigos.",
+        "Converse sobre segurança digital e redes sociais com transparência, evitando monitoramento secreto.",
+        "Reaja de forma proporcional a erros e mentiras, para que ele sinta que vale mais a pena contar a verdade do que esconder."
       ],
       "desafiosComuns": [
-        "Oscilação emocional intensa.",
-        "Conflitos sobre horários e liberdade.",
-        "Sensibilidade a críticas."
+        "Oscilação emocional intensa e aparentemente sem motivo aparente.",
+        "Conflitos sobre horários, liberdade e uso de celular.",
+        "Sensibilidade a críticas, inclusive as bem-intencionadas.",
+        "Questionamento mais firme de regras e da autoridade dos pais.",
+        "Busca de privacidade que pode ser confundida com sinal de alerta quando não é."
       ],
       "frasesGuia": [
         "Eu não vou concordar com tudo, mas sempre vou te ouvir.",
-        "Me ajuda a entender o que você está sentindo?"
+        "Me ajuda a entender o que você está sentindo?",
+        "Percebo que você está irritado. Quando quiser conversar, estou por perto.",
+        "Eu respeito sua privacidade. Só preciso saber que você está seguro.",
+        "Eu vejo os prós e contras assim... mas a decisão final é sua nessa parte."
       ]
     },
     {
@@ -115,24 +160,34 @@
       "idadeMin": 16,
       "idadeMax": 18,
       "fasesDesenvolvimento": [
-        "Consolidação de valores e planos para o futuro.",
-        "Maior capacidade de pensamento abstrato e planejamento.",
-        "Busca por reconhecimento como adulto em formação."
+        "Consolidação de valores próprios e planos concretos para o futuro (estudo, trabalho, carreira).",
+        "Maior capacidade de pensamento abstrato, planejamento e ponderação de consequências de longo prazo.",
+        "Busca por reconhecimento como adulto em formação, com responsabilidades reais e crescentes.",
+        "Frustração e ansiedade sobre o futuro costumam aparecer disfarçadas de irritabilidade ou apatia, não como birra visível.",
+        "Uso de telas e redes sociais já é mais autônomo; o papel dos pais migra de controlar para ajudar a desenvolver autorregulação própria.",
+        "Maior capacidade de assumir consequências de decisões próprias, incluindo erros com menor necessidade de resgate imediato dos pais."
       ],
       "abordagemPais": [
-        "Trate como alguém cada vez mais responsável pelas próprias escolhas.",
-        "Compartilhe experiências em vez de dar ordens.",
-        "Apoie decisões sobre futuro (estudo, trabalho) sem impor.",
-        "Mantenha-se disponível para conversas difíceis, sem julgar primeiro."
+        "Trate como alguém cada vez mais responsável pelas próprias escolhas, incluindo erros e consequências naturais.",
+        "Compartilhe experiências pessoais em vez de dar ordens diretas.",
+        "Apoie decisões sobre futuro (estudo, trabalho) sem impor um caminho específico.",
+        "Mantenha-se disponível para conversas difíceis, sem julgar antes de entender o contexto completo.",
+        "Negocie regras como um acordo entre duas pessoas, revisando-as conforme a confiança é construída.",
+        "Converse sobre autorregulação de telas como igual, compartilhando também suas próprias dificuldades com o tema."
       ],
       "desafiosComuns": [
-        "Ansiedade sobre o futuro (vestibular, carreira).",
+        "Ansiedade sobre o futuro (vestibular, carreira, independência financeira).",
         "Primeiras experiências de relacionamento e trabalho.",
-        "Busca por mais liberdade e menos supervisão."
+        "Busca por mais liberdade e menos supervisão direta.",
+        "Negociação constante de regras e horários, especialmente à noite.",
+        "Dificuldade em pedir ajuda quando algo não está indo bem, por medo de decepcionar."
       ],
       "frasesGuia": [
         "Essa decisão é sua, e eu estou aqui se precisar conversar.",
-        "Conta comigo para pensar nisso junto, sem cobrança."
+        "Conta comigo para pensar nisso junto, sem cobrança.",
+        "Eu sei que decidir o futuro agora parece enorme. Você não precisa ter tudo resolvido hoje.",
+        "Eu confio em você, mas fico preocupado com isso. Que tal combinarmos algo que funcione para os dois?",
+        "Como você tem sentido seu próprio uso de tela ultimamente? Percebe algum impacto no sono ou na disposição?"
       ]
     }
   ]
