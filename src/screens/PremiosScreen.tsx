@@ -1,8 +1,9 @@
 import { useMemo, useState } from 'react';
+import { Trophy, Star } from 'lucide-react';
 import { useConteudo } from '../hooks/useConteudo';
 import { useFaixaEtariaAtiva } from '../context/FaixaEtariaContext';
 import { Card } from '../components/ui/Card';
-import { Badge } from '../components/ui/Badge';
+import { PageHero } from '../components/ui/PageHero';
 
 export function PremiosScreen() {
   const { faixasCusto } = useConteudo();
@@ -25,13 +26,12 @@ export function PremiosScreen() {
 
   return (
     <div className="flex flex-col gap-5 pt-2">
-      <header>
-        <Badge tom="accent">Prêmios</Badge>
-        <h1 className="mt-2 text-3xl font-semibold text-primary">Ideias de recompensa</h1>
-        <p className="mt-2 text-sm text-primary/70">
-          Filtre por custo e veja quantas estrelas cada recompensa exige.
-        </p>
-      </header>
+      <PageHero
+        icon={Trophy}
+        eyebrow="Prêmios"
+        title="Ideias de recompensa"
+        description="Filtre por custo e veja quantas estrelas cada recompensa exige."
+      />
 
       {faixaAtiva && (
         <div className="flex items-center justify-between gap-2 rounded-card bg-accent/10 px-3 py-2 text-xs text-primary">
@@ -96,8 +96,10 @@ export function PremiosScreen() {
                       {premio.descricao}
                     </p>
                   </div>
-                  <div className="flex shrink-0 flex-col items-center rounded-card bg-accent/15 px-3 py-2 text-accent">
-                    <span className="text-lg font-semibold leading-none">★ {premio.estrelas}</span>
+                  <div className="flex shrink-0 flex-col items-center rounded-2xl bg-accent/15 px-3 py-2 text-accent">
+                    <span className="flex items-center gap-1 text-lg font-semibold leading-none">
+                      <Star className="h-4 w-4 fill-accent" /> {premio.estrelas}
+                    </span>
                     <span className="mt-0.5 text-[10px] uppercase tracking-wide">estrelas</span>
                   </div>
                 </Card>

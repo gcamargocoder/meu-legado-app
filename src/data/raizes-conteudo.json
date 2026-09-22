@@ -458,6 +458,50 @@
       ],
       "frasePronta": "Percebi que a gente sempre trava nesse ponto. O que está difícil aqui pra você? Vamos achar uma solução que funcione pros dois.",
       "prevencaoLongoPrazo": "Reserve um momento calmo, fora do calor do conflito, para mapear com ele quais situações mais geram travas e negociar soluções antecipadas para essas situações específicas."
+    },
+    {
+      "id": "excesso-tela-celular-quarto-noite",
+      "titulo": "Excesso de tempo de tela e celular no quarto à noite",
+      "categoria": "Uso de telas",
+      "faixasEtarias": ["10-12", "13-15", "16-18"],
+      "oQueEstaAcontecendo": "Segundo as diretrizes da Sociedade Brasileira de Pediatria (campanha #MenosTelas), a luz azul das telas suprime a produção de melatonina e adia o sono, enquanto notificações e redes sociais mantêm o cérebro em estado de alerta justamente na hora em que ele precisa desacelerar. Levar o celular para o quarto à noite está associado a menos horas de sono, pior qualidade de sono e mais cansaço no dia seguinte.",
+      "passoAPasso": [
+        "Explique o motivo com base em sono, não em desconfiança: 'Isso é sobre seu descanso, não sobre não confiar em você.'",
+        "Combine um horário fixo para desligar ou entregar as telas, igual para todos da casa, inclusive os adultos.",
+        "Defina um local comum fora do quarto para carregar os celulares durante a noite.",
+        "Ofereça uma alternativa para o momento antes de dormir, como leitura, música calma ou conversa.",
+        "Reveja o combinado com ele periodicamente, ajustando conforme a idade e a confiança."
+      ],
+      "oQueNaoFazer": [
+        "Impor a regra só para o adolescente enquanto os adultos usam telas livremente à noite.",
+        "Confiscar o celular como punição pontual sem transformar isso em rotina combinada.",
+        "Permitir exceções frequentes que esvaziam o combinado original.",
+        "Tratar o pedido de manter o celular por perto como sinal de irresponsabilidade, sem entender a causa (ansiedade social, medo de perder algo)."
+      ],
+      "frasePronta": "Vamos combinar um lugar fora do quarto para carregar o celular à noite — isso vale pra todo mundo aqui em casa, inclusive eu.",
+      "prevencaoLongoPrazo": "Estabeleça o hábito de 'telas fora do quarto à noite' o mais cedo possível, antes da adolescência, para que vire rotina natural da casa em vez de uma restrição nova e discutível depois."
+    },
+    {
+      "id": "explosao-emocional-grosseria-adolescente",
+      "titulo": "Explosão emocional e grosseria do adolescente",
+      "categoria": "Regulação emocional",
+      "faixasEtarias": ["13-15", "16-18"],
+      "oQueEstaAcontecendo": "Segundo Lisa Damour, explosões emocionais e respostas grosseiras na adolescência costumam vir de uma sobrecarga emocional real, não de má-criação — o sistema límbico (emocional) amadurece antes do córtex pré-frontal (controle de impulsos), criando um desequilíbrio temporário normal do desenvolvimento. Ainda assim, validar o sentimento não significa aceitar o desrespeito: as duas coisas podem e devem acontecer ao mesmo tempo.",
+      "passoAPasso": [
+        "Dê um momento de respiro antes de responder, para não reagir no mesmo tom.",
+        "Valide o sentimento por trás da explosão: 'Percebo que você está muito irritado agora.'",
+        "Nomeie o comportamento inaceitável separadamente do sentimento: 'Ficar bravo é normal, falar assim comigo não é.'",
+        "Peça, sem exigir imediatamente, uma forma mais respeitosa de continuar a conversa.",
+        "Retome o assunto de fundo mais tarde, quando os dois estiverem calmos."
+      ],
+      "oQueNaoFazer": [
+        "Revidar a grosseria com grosseria ou ironia.",
+        "Negar ou minimizar o sentimento por trás da explosão ('não é motivo pra tanto').",
+        "Deixar o desrespeito passar sem nomear, só para evitar mais conflito.",
+        "Punir no calor da explosão, antes que os dois estejam regulados o suficiente para conversar."
+      ],
+      "frasePronta": "Eu entendo que você está muito bravo, e tudo bem sentir isso. O que não está bem é falar comigo desse jeito — vamos tentar de novo.",
+      "prevencaoLongoPrazo": "Converse em momentos calmos sobre quais formas de expressar raiva são aceitáveis em casa, para que exista um combinado claro antes da próxima explosão acontecer."
     }
   ],
   "frasesCategorias": [

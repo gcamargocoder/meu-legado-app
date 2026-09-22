@@ -1,7 +1,9 @@
+import { Sparkles } from 'lucide-react';
 import { useFaixasEtarias } from '../hooks/useFaixasEtarias';
 import { useFaixaEtariaAtiva } from '../context/FaixaEtariaContext';
 import { Card } from '../components/ui/Card';
 import { Badge } from '../components/ui/Badge';
+import { PageHero } from '../components/ui/PageHero';
 import { SpeakerButton } from '../components/ui/SpeakerButton';
 
 export function FaixasEtariasScreen() {
@@ -10,14 +12,12 @@ export function FaixasEtariasScreen() {
 
   return (
     <div className="flex flex-col gap-6 pt-2">
-      <header>
-        <Badge tom="accent">Faixas Etárias</Badge>
-        <h1 className="mt-2 text-3xl font-semibold text-primary">Qual a idade do seu filho?</h1>
-        <p className="mt-2 text-sm text-primary/70">
-          Escolha a faixa etária para ver o que esperar dessa fase. Sua escolha vira o filtro
-          padrão de Situações, Frases e Prêmios.
-        </p>
-      </header>
+      <PageHero
+        icon={Sparkles}
+        eyebrow="Faixas Etárias"
+        title="Qual a idade do seu filho?"
+        description="Escolha a faixa etária para ver o que esperar dessa fase. Sua escolha vira o filtro padrão de Situações, Frases e Prêmios."
+      />
 
       <div className="flex flex-wrap gap-2">
         {faixas.map((faixa) => {

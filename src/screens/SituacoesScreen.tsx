@@ -1,10 +1,20 @@
 import { useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Search, ChevronDown, Brain, ListChecks, XCircle, Quote, ShieldCheck } from 'lucide-react';
+import {
+  Search,
+  ChevronDown,
+  Brain,
+  ListChecks,
+  XCircle,
+  Quote,
+  ShieldCheck,
+  MessageCircle,
+} from 'lucide-react';
 import { useConteudo } from '../hooks/useConteudo';
 import { useFaixaEtariaAtiva } from '../context/FaixaEtariaContext';
 import { Card } from '../components/ui/Card';
 import { Badge } from '../components/ui/Badge';
+import { PageHero } from '../components/ui/PageHero';
 import { SpeakerButton } from '../components/ui/SpeakerButton';
 import type { Situacao } from '../types/conteudo';
 
@@ -46,14 +56,12 @@ export function SituacoesScreen() {
 
   return (
     <div className="flex flex-col gap-5 pt-2">
-      <header>
-        <Badge tom="accent">Situações</Badge>
-        <h1 className="mt-2 text-3xl font-semibold text-primary">Guia do dia a dia</h1>
-        <p className="mt-2 text-sm text-primary/70">
-          Busque uma situação para ver o que está acontecendo, o passo a passo, o que evitar e a
-          frase para usar.
-        </p>
-      </header>
+      <PageHero
+        icon={MessageCircle}
+        eyebrow="Situações"
+        title="Guia do dia a dia"
+        description="Busque uma situação para ver o que está acontecendo, o passo a passo, o que evitar e a frase para usar."
+      />
 
       {faixaAtiva && (
         <div className="flex items-center justify-between gap-2 rounded-2xl bg-accent/10 px-3 py-2 text-xs text-primary">

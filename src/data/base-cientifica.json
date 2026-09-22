@@ -35,6 +35,30 @@
       "nome": "Frances Jensen",
       "metodologia": "O Cérebro Adolescente",
       "descricao": "Neurocientista autora de 'The Teenage Brain', explica por que o cérebro adolescente processa risco, emoção e recompensa de forma diferente do cérebro adulto — o córtex pré-frontal, responsável pelo controle de impulsos, só amadurece completamente por volta dos 25 anos. Essa base explica a abordagem mais colaborativa e menos impositiva recomendada pelo app para as faixas etárias de 13 a 18 anos."
+    },
+    {
+      "id": "lisa-damour",
+      "nome": "Lisa Damour",
+      "metodologia": "Gestão Emocional de Adolescentes",
+      "descricao": "Psicóloga clínica e consultora do filme 'Divertida Mente 2', especialista em desenvolvimento emocional na adolescência. Defende que emoções intensas — inclusive grosseria e explosões — são parte esperada do amadurecimento adolescente, e que o papel dos pais é validar o sentimento por trás da explosão sem abrir mão dos limites de respeito. Sua ideia central, 'validação emocional sem tolerância ao desrespeito', orienta as situações de explosão emocional do app."
+    },
+    {
+      "id": "laurence-steinberg",
+      "nome": "Laurence Steinberg",
+      "metodologia": "Autonomia Gradual na Adolescência",
+      "descricao": "Uma das maiores autoridades mundiais em psicologia do desenvolvimento adolescente, autor de 'Age of Opportunity'. Defende que a adolescência é uma janela única de plasticidade cerebral, e que pais eficazes ampliam a autonomia de forma gradual e negociada — nem controle rígido, nem ausência de limites — enquanto mantêm calor afetivo e supervisão. Essa visão fundamenta o conceito de 'acordos e autonomia' usado no Mural para adolescentes."
+    },
+    {
+      "id": "icami-tiba",
+      "nome": "Içami Tiba",
+      "metodologia": "Quem Ama, Educa!",
+      "descricao": "Psiquiatra brasileiro, referência nacional em educação familiar com a obra 'Quem Ama, Educa!'. Defendia que amar de verdade inclui colocar limites e preparar os filhos para a vida real, não apenas evitar o sofrimento deles no curto prazo. Sua visão brasileira sobre limites, disciplina e preparo para a autonomia complementa as referências internacionais do app com um olhar culturalmente próximo às famílias brasileiras."
+    },
+    {
+      "id": "sbp",
+      "nome": "Sociedade Brasileira de Pediatria (SBP)",
+      "metodologia": "Diretrizes de Saúde Digital e Tempo de Tela",
+      "descricao": "Entidade brasileira de referência médica que publica diretrizes oficiais sobre uso saudável de telas por crianças e adolescentes, incluindo a campanha #MenosTelas. Recomenda limites de tempo de tela por idade, ausência de telas no quarto durante a noite e priorização do sono e das relações presenciais. As situações do app sobre uso de telas e celular no quarto seguem essas diretrizes."
     }
   ]
 }

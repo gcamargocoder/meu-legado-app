@@ -1,8 +1,9 @@
 import { useMemo, useState } from 'react';
+import { BookOpen, Copy, Check } from 'lucide-react';
 import { useConteudo } from '../hooks/useConteudo';
 import { useFaixaEtariaAtiva } from '../context/FaixaEtariaContext';
 import { Card } from '../components/ui/Card';
-import { Badge } from '../components/ui/Badge';
+import { PageHero } from '../components/ui/PageHero';
 import { SpeakerButton } from '../components/ui/SpeakerButton';
 
 export function FrasesScreen() {
@@ -35,13 +36,12 @@ export function FrasesScreen() {
 
   return (
     <div className="flex flex-col gap-5 pt-2">
-      <header>
-        <Badge tom="accent">Frases & Diálogo</Badge>
-        <h1 className="mt-2 text-3xl font-semibold text-primary">Comunicação não violenta</h1>
-        <p className="mt-2 text-sm text-primary/70">
-          Frases prontas para os momentos mais comuns do dia a dia. Toque para copiar.
-        </p>
-      </header>
+      <PageHero
+        icon={BookOpen}
+        eyebrow="Frases & Diálogo"
+        title="Comunicação não violenta"
+        description="Frases prontas para os momentos mais comuns do dia a dia. Toque para copiar."
+      />
 
       {faixaAtiva && (
         <div className="flex items-center justify-between gap-2 rounded-card bg-accent/10 px-3 py-2 text-xs text-primary">
@@ -76,11 +76,19 @@ export function FrasesScreen() {
                       <button
                         type="button"
                         onClick={() => copiarFrase(id, frase.texto)}
-                        className={`rounded-card px-3 py-1.5 text-xs font-medium transition-colors ${
+                        className={`flex items-center gap-1.5 rounded-2xl px-3 py-1.5 text-xs font-medium transition-all duration-200 active:scale-[0.97] ${
                           copiada ? 'bg-accent text-app' : 'bg-primary/10 text-primary'
                         }`}
                       >
-                        {copiada ? 'Copiado!' : 'Copiar'}
+                        {copiada ? (
+                          <>
+                            <Check className="h-3.5 w-3.5" /> Copiado!
+                          </>
+                        ) : (
+                          <>
+                            <Copy className="h-3.5 w-3.5" /> Copiar
+                          </>
+                        )}
                       </button>
                     </div>
                   </Card>
