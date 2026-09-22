@@ -3,6 +3,7 @@ import { useConteudo } from '../hooks/useConteudo';
 import { useFaixaEtariaAtiva } from '../context/FaixaEtariaContext';
 import { Card } from '../components/ui/Card';
 import { Badge } from '../components/ui/Badge';
+import { SpeakerButton } from '../components/ui/SpeakerButton';
 import type { Situacao } from '../types/conteudo';
 
 function normalizar(texto: string): string {
@@ -167,9 +168,15 @@ function SituacaoCard({
           </div>
 
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-wide text-primary">
-              Passo a passo imediato
-            </h3>
+            <div className="flex items-center gap-2">
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-primary">
+                Passo a passo imediato
+              </h3>
+              <SpeakerButton
+                texto={situacao.passoAPasso.join('. ')}
+                label="Ouvir passo a passo"
+              />
+            </div>
             <ol className="mt-1 flex flex-col gap-1.5">
               {situacao.passoAPasso.map((passo, i) => (
                 <li key={i} className="flex gap-2 text-sm leading-relaxed text-primary/80">
@@ -199,9 +206,12 @@ function SituacaoCard({
           </div>
 
           <div className="rounded-card border border-accent/30 bg-accent/10 p-3">
-            <h3 className="text-xs font-semibold uppercase tracking-wide text-accent">
-              Frase pronta
-            </h3>
+            <div className="flex items-center gap-2">
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-accent">
+                Frase pronta
+              </h3>
+              <SpeakerButton texto={situacao.frasePronta} label="Ouvir frase pronta" />
+            </div>
             <p className="mt-1 text-sm italic leading-relaxed text-primary/90">
               "{situacao.frasePronta}"
             </p>

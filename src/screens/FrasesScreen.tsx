@@ -3,6 +3,7 @@ import { useConteudo } from '../hooks/useConteudo';
 import { useFaixaEtariaAtiva } from '../context/FaixaEtariaContext';
 import { Card } from '../components/ui/Card';
 import { Badge } from '../components/ui/Badge';
+import { SpeakerButton } from '../components/ui/SpeakerButton';
 
 export function FrasesScreen() {
   const { frasesCategorias } = useConteudo();
@@ -70,15 +71,18 @@ export function FrasesScreen() {
                 return (
                   <Card key={id} className="flex items-center justify-between gap-3">
                     <p className="text-sm leading-relaxed text-primary/90">"{frase.texto}"</p>
-                    <button
-                      type="button"
-                      onClick={() => copiarFrase(id, frase.texto)}
-                      className={`shrink-0 rounded-card px-3 py-1.5 text-xs font-medium transition-colors ${
-                        copiada ? 'bg-accent text-app' : 'bg-primary/10 text-primary'
-                      }`}
-                    >
-                      {copiada ? 'Copiado!' : 'Copiar'}
-                    </button>
+                    <div className="flex shrink-0 items-center gap-2">
+                      <SpeakerButton texto={frase.texto} label="Ouvir frase" />
+                      <button
+                        type="button"
+                        onClick={() => copiarFrase(id, frase.texto)}
+                        className={`rounded-card px-3 py-1.5 text-xs font-medium transition-colors ${
+                          copiada ? 'bg-accent text-app' : 'bg-primary/10 text-primary'
+                        }`}
+                      >
+                        {copiada ? 'Copiado!' : 'Copiar'}
+                      </button>
+                    </div>
                   </Card>
                 );
               })}

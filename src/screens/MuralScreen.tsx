@@ -1,6 +1,7 @@
 import { useMemo, useState, type FormEvent } from 'react';
 import { useConteudo } from '../hooks/useConteudo';
 import { useMuralData } from '../hooks/useMuralData';
+import { usePerfilAtivo } from '../context/PerfilContext';
 
 const LABELS_DIAS = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'];
 
@@ -14,6 +15,7 @@ function formatarIntervalo(dias: Date[]): string {
 
 export function MuralScreen() {
   const { categoriasCondutas } = useConteudo();
+  const { perfilAtivo } = usePerfilAtivo();
   const {
     diasDaSemana,
     marcasPorConduta,
@@ -25,7 +27,7 @@ export function MuralScreen() {
     estaNaSemanaAtual,
     condutasPersonalizadas,
     adicionarCondutaPersonalizada,
-  } = useMuralData();
+  } = useMuralData(perfilAtivo?.id ?? null);
 
   const [formAberto, setFormAberto] = useState(false);
   const [novoTitulo, setNovoTitulo] = useState('');
@@ -58,7 +60,9 @@ export function MuralScreen() {
         <p className="text-sm font-medium uppercase tracking-wide text-accent">
           Mural de Estrelas
         </p>
-        <h1 className="mt-1 text-3xl font-semibold text-primary">Semana atual</h1>
+        <h1 className="mt-1 text-3xl font-semibold text-primary">
+          {perfilAtivo ? `Semana de ${perfilAtivo.nome}` : 'Semana atual'}
+        </h1>
       </header>
 
       <div className="flex items-center justify-between rounded-card border border-primary/10 bg-white/60 p-3 shadow-sm dark:bg-white/5">

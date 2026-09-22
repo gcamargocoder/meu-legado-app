@@ -2,7 +2,6 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { supabase } from '../lib/supabase';
 import { getDeviceId } from '../lib/deviceId';
 
-const STORAGE_KEY = 'meu-legado:mural';
 const DIAS_NA_SEMANA = 7;
 const SYNC_DEBOUNCE_MS = 800;
 
@@ -17,13 +16,17 @@ interface MuralStorage {
   marcasPorSemana: Record<string, Record<string, boolean[]>>;
 }
 
+function getStorageKey(perfilId: string | null): string {
+  return `meu-legado:mural:${perfilId ?? 'default'}`;
+}
+
 function estadoVazio(): MuralStorage {
   return { condutasPersonalizadas: [], marcasPorSemana: {} };
 }
 
-function carregarStorage(): MuralStorage {
+function carregarStorage(perfilId: string | null): MuralStorage {
   try {
-    const bruto = localStorage.getItem(STORAGE_KEY);
+    const bruto = localStorage.getItem(getStorageKey(perfilId));
     if (!bruto) return estadoVazio();
     const salvo = JSON.parse(bruto) as Partial<MuralStorage>;
     return {
@@ -85,14 +88,25 @@ function deslocarSemana(semanaId: string, deltaSemanas: number): string {
   return getSemanaId(segunda);
 }
 
-export function useMuralData() {
+/**
+ * @param perfilId Id do perfil da criança ativo (usePerfilAtivo). `null`
+ * mantém compatibilidade com o uso anterior de perfil único, guardando os
+ * dados sob a chave "default" em vez de espalhar por várias chaves.
+ */
+export function useMuralData(perfilId: string | null = null) {
   const semanaAtualId = useMemo(() => getSemanaId(new Date()), []);
   const [semanaSelecionadaId, setSemanaSelecionadaId] = useState(semanaAtualId);
-  const [storage, setStorage] = useState<MuralStorage>(carregarStorage);
+  const [storage, setStorage] = useState<MuralStorage>(() => carregarStorage(perfilId));
+
+  // Ao trocar de criança, recarrega o mural daquele perfil em vez de manter
+  // o estado do perfil anterior em memória.
+  useEffect(() => {
+    setStorage(carregarStorage(perfilId));
+  }, [perfilId]);
 
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(storage));
-  }, [storage]);
+    localStorage.setItem(getStorageKey(perfilId), JSON.stringify(storage));
+  }, [storage, perfilId]);
 
   // Sincronização com Supabase: localStorage continua sendo a fonte de
   // verdade imediata (offline-first); a nuvem é só um espelho em segundo
@@ -109,6 +123,7 @@ export function useMuralData() {
   useEffect(() => {
     if (!supabase) return;
     let cancelado = false;
+    const criancaId = perfilId ?? 'default';
 
     async function hidratarDaNuvem() {
       const { data, error } = await supabase!
@@ -116,6 +131,7 @@ export function useMuralData() {
         .select('condutas_completadas, condutas_personalizadas')
         .eq('user_id', getDeviceId())
         .eq('semana_iso', semanaSelecionadaId)
+        .eq('crianca_id', criancaId)
         .maybeSingle();
 
       if (cancelado || error || !data) return;
@@ -148,11 +164,12 @@ export function useMuralData() {
     return () => {
       cancelado = true;
     };
-  }, [semanaSelecionadaId]);
+  }, [semanaSelecionadaId, perfilId]);
 
   useEffect(() => {
     if (!supabase) return;
     const marcasDaSemana = storage.marcasPorSemana[semanaSelecionadaId] ?? {};
+    const criancaId = perfilId ?? 'default';
 
     const handle = setTimeout(() => {
       supabase!
@@ -161,11 +178,12 @@ export function useMuralData() {
           {
             user_id: getDeviceId(),
             semana_iso: semanaSelecionadaId,
+            crianca_id: criancaId,
             condutas_completadas: marcasDaSemana,
             condutas_personalizadas: storage.condutasPersonalizadas,
             updated_at: new Date().toISOString(),
           },
-          { onConflict: 'user_id,semana_iso' }
+          { onConflict: 'user_id,semana_iso,crianca_id' }
         )
         .then(({ error }) => {
           if (error) console.warn('Falha ao sincronizar mural com Supabase:', error.message);
@@ -173,7 +191,7 @@ export function useMuralData() {
     }, SYNC_DEBOUNCE_MS);
 
     return () => clearTimeout(handle);
-  }, [storage, semanaSelecionadaId]);
+  }, [storage, semanaSelecionadaId, perfilId]);
 
   const diasDaSemana = useMemo(() => getDiasDaSemana(semanaSelecionadaId), [semanaSelecionadaId]);
 

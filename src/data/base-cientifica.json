@@ -1,0 +1,40 @@
+{
+  "especialistas": [
+    {
+      "id": "diana-baumrind",
+      "nome": "Diana Baumrind",
+      "metodologia": "Estilo Autoritativo",
+      "descricao": "Psicóloga que identificou os estilos parentais autoritário, permissivo e autoritativo. Sua pesquisa mostrou que o estilo autoritativo — que combina afeto e acolhimento com limites firmes e consistentes — está associado aos melhores resultados de desenvolvimento emocional e social das crianças. O 'Meu Legado' usa esse equilíbrio entre calor humano e limite claro como base de quase todas as orientações do app."
+    },
+    {
+      "id": "jane-nelsen",
+      "nome": "Jane Nelsen",
+      "metodologia": "Disciplina Positiva",
+      "descricao": "Criadora do método Disciplina Positiva, baseado na psicologia adleriana. Defende que disciplina eficaz é 'gentil e firme ao mesmo tempo': nunca permissiva, nunca punitiva. Ensina que comportamentos difíceis costumam esconder uma necessidade não atendida de pertencimento e significância, e que resolver o problema junto com a criança ensina mais do que punir."
+    },
+    {
+      "id": "siegel-bryson",
+      "nome": "Daniel J. Siegel & Tina Payne Bryson",
+      "metodologia": "Neurociência Aplicada — O Cérebro da Criança",
+      "descricao": "Autores de 'O Cérebro da Criança', trazem a neurociência para o dia a dia da criação dos filhos. Explicam conceitos como o 'cérebro de cima' (racional) e o 'cérebro de baixo' (emocional/impulsivo), e técnicas práticas como 'nomear para domar' — colocar em palavras o que a criança sente para ajudar a regular a emoção. Fundamentam boa parte da explicação de 'o que está acontecendo' nas situações do app."
+    },
+    {
+      "id": "ross-greene",
+      "nome": "Ross Greene",
+      "metodologia": "Soluções Colaborativas e Proativas (CPS)",
+      "descricao": "Criador da abordagem CPS (Collaborative & Proactive Solutions) e da frase 'crianças fazem bem quando conseguem' — comportamentos desafiadores costumam refletir uma habilidade ainda em desenvolvimento (flexibilidade, tolerância à frustração, resolução de problemas), não falta de vontade. Propõe resolver conflitos recorrentes através de um roteiro colaborativo de três passos: empatia, preocupação do adulto e convite a uma solução conjunta."
+    },
+    {
+      "id": "faber-mazlish",
+      "nome": "Adele Faber & Elaine Mazlish",
+      "metodologia": "Comunicação Não Violenta e Prática",
+      "descricao": "Autoras de 'Como Conversar para os Filhos Escutarem e Escutar para os Filhos Conversarem', traduzem princípios de comunicação empática em scripts práticos do dia a dia: descrever em vez de acusar, validar sentimentos antes de corrigir, e oferecer escolhas em vez de ordens. As frases prontas do app se inspiram diretamente nesse estilo de comunicação."
+    },
+    {
+      "id": "frances-jensen",
+      "nome": "Frances Jensen",
+      "metodologia": "O Cérebro Adolescente",
+      "descricao": "Neurocientista autora de 'The Teenage Brain', explica por que o cérebro adolescente processa risco, emoção e recompensa de forma diferente do cérebro adulto — o córtex pré-frontal, responsável pelo controle de impulsos, só amadurece completamente por volta dos 25 anos. Essa base explica a abordagem mais colaborativa e menos impositiva recomendada pelo app para as faixas etárias de 13 a 18 anos."
+    }
+  ]
+}

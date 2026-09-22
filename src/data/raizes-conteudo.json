@@ -414,6 +414,50 @@
       ],
       "frasePronta": "Eu vejo os prós e contras assim... mas a decisão final é sua. Estarei aqui de qualquer jeito.",
       "prevencaoLongoPrazo": "Ofereça decisões de risco crescente e progressivo ao longo da adolescência, para que aos 16-18 anos ele já tenha prática real em decidir e lidar com consequências."
+    },
+    {
+      "id": "rigidez-cognitiva-trava-no-nao-2-9",
+      "titulo": "Quando a criança 'trava no não' e recusa colaborar",
+      "categoria": "Rigidez cognitiva (CPS)",
+      "faixasEtarias": ["2-5", "6-9"],
+      "oQueEstaAcontecendo": "Segundo o modelo de Ross Greene (Soluções Colaborativas e Proativas), 'crianças fazem bem quando conseguem': travar num 'não' repetido e recusar até pedidos pequenos costuma sinalizar uma habilidade ainda em desenvolvimento — flexibilidade, tolerância à frustração ou transição entre atividades — e não teimosia ou manipulação deliberada.",
+      "passoAPasso": [
+        "Passo da Empatia: descreva o que você percebe e pergunte o que está acontecendo, sem julgar. Ex.: 'Percebi que você não quer trocar de roupa agora. O que está rolando?'",
+        "Escute a resposta inteira antes de reagir, mesmo que pareça pouco clara ou repetitiva.",
+        "Passo da Preocupação do adulto: compartilhe sua preocupação de forma breve e concreta. Ex.: 'Minha preocupação é que vamos nos atrasar para a escola.'",
+        "Passo do Convite: convide a criança a pensar numa solução com você. Ex.: 'Existe algum jeito de resolvermos isso que funcione para nós dois?'",
+        "Teste a solução combinada; se não funcionar, volte ao passo do convite e tentem outra ideia juntos."
+      ],
+      "oQueNaoFazer": [
+        "Impor a solução assim que a criança travar, sem tentar entender a causa primeiro.",
+        "Repetir a mesma ordem em volume mais alto, esperando que 'dessa vez funcione'.",
+        "Tratar a rigidez como teimosia proposital ou manha.",
+        "Pular direto para a punição sem tentar o diálogo colaborativo antes."
+      ],
+      "frasePronta": "Percebi que você travou nisso. O que está difícil pra você agora? Vamos pensar juntos numa forma de resolver.",
+      "prevencaoLongoPrazo": "Mapeie os gatilhos recorrentes de rigidez (transições, roupas, texturas, mudanças de plano) e antecipe-os com aviso e estrutura extra antes que a criança trave."
+    },
+    {
+      "id": "recusa-colaboracao-cps-10-15",
+      "titulo": "Recusa de colaboração e impasses recorrentes",
+      "categoria": "Rigidez cognitiva (CPS)",
+      "faixasEtarias": ["10-12", "13-15"],
+      "oQueEstaAcontecendo": "Em pré-adolescentes e adolescentes, 'travar' numa recusa costuma vir de sentir-se controlado ou não ouvido, somado a uma habilidade específica ainda em desenvolvimento (regulação emocional sob demanda, flexibilidade cognitiva). O modelo CPS de Ross Greene propõe resolver o impasse como um problema a ser solucionado em conjunto, não como um teste de autoridade a ser vencido.",
+      "passoAPasso": [
+        "Passo da Empatia: descreva o impasse com curiosidade genuína. Ex.: 'Notei que você não quer nem começar o trabalho de casa. Me ajuda a entender por quê?'",
+        "Escute a resposta completa, incluindo frustrações que pareçam desproporcionais ao pedido em si.",
+        "Passo da Preocupação do adulto: explique sua preocupação real e específica. Ex.: 'Minha preocupação é que, sem começar hoje, vai virar uma correria amanhã.'",
+        "Passo do Convite: pergunte 'Existe alguma forma de resolvermos isso que funcione pra nós dois?' e ajude a gerar opções juntos.",
+        "Escolham uma solução para testar por um período curto e combinem revisitar se não funcionar."
+      ],
+      "oQueNaoFazer": [
+        "Tratar a recusa como desrespeito pessoal e responder com punição imediata.",
+        "Insistir repetindo o mesmo pedido sem investigar a causa da recusa.",
+        "Ceder totalmente só para acabar o conflito, sem chegar a um acordo real.",
+        "Fazer a conversa na frente de outras pessoas, o que aumenta a resistência por vergonha."
+      ],
+      "frasePronta": "Percebi que a gente sempre trava nesse ponto. O que está difícil aqui pra você? Vamos achar uma solução que funcione pros dois.",
+      "prevencaoLongoPrazo": "Reserve um momento calmo, fora do calor do conflito, para mapear com ele quais situações mais geram travas e negociar soluções antecipadas para essas situações específicas."
     }
   ],
   "frasesCategorias": [

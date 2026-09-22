@@ -2,6 +2,7 @@ import { useFaixasEtarias } from '../hooks/useFaixasEtarias';
 import { useFaixaEtariaAtiva } from '../context/FaixaEtariaContext';
 import { Card } from '../components/ui/Card';
 import { Badge } from '../components/ui/Badge';
+import { SpeakerButton } from '../components/ui/SpeakerButton';
 
 export function FaixasEtariasScreen() {
   const { faixas } = useFaixasEtarias();
@@ -55,8 +56,9 @@ export function FaixasEtariasScreen() {
             </h3>
             <ul className="mt-2 flex flex-col gap-2">
               {faixaAtiva.frasesGuia.map((frase) => (
-                <li key={frase} className="text-sm italic leading-relaxed text-primary/90">
-                  "{frase}"
+                <li key={frase} className="flex items-start gap-2 text-sm italic leading-relaxed text-primary/90">
+                  <span className="flex-1">"{frase}"</span>
+                  <SpeakerButton texto={frase} label="Ouvir frase" />
                 </li>
               ))}
             </ul>
