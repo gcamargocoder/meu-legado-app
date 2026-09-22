@@ -1,7 +1,10 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { supabase } from '../lib/supabase';
+import { getDeviceId } from '../lib/deviceId';
 
 const STORAGE_KEY = 'meu-legado:mural';
 const DIAS_NA_SEMANA = 7;
+const SYNC_DEBOUNCE_MS = 800;
 
 export interface CondutaPersonalizada {
   id: string;
@@ -90,6 +93,78 @@ export function useMuralData() {
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(storage));
   }, [storage]);
+
+  // Sincronização com Supabase: localStorage continua sendo a fonte de
+  // verdade imediata (offline-first); a nuvem é só um espelho em segundo
+  // plano, sem bloquear a UI e tolerando falhas silenciosamente.
+  useEffect(() => {
+    if (!supabase) return;
+    let cancelado = false;
+
+    async function hidratarDaNuvem() {
+      const { data, error } = await supabase!
+        .from('mural_semanal')
+        .select('condutas_completadas, condutas_personalizadas')
+        .eq('user_id', getDeviceId())
+        .eq('semana_iso', semanaSelecionadaId)
+        .maybeSingle();
+
+      if (cancelado || error || !data) return;
+
+      setStorage((atual) => {
+        const jaTemDadosLocaisDaSemana = Boolean(atual.marcasPorSemana[semanaSelecionadaId]);
+        const marcasPorSemana = jaTemDadosLocaisDaSemana
+          ? atual.marcasPorSemana
+          : {
+              ...atual.marcasPorSemana,
+              [semanaSelecionadaId]: (data.condutas_completadas ?? {}) as Record<
+                string,
+                boolean[]
+              >,
+            };
+
+        const idsLocais = new Set(atual.condutasPersonalizadas.map((c) => c.id));
+        const personalizadasRemotas = (data.condutas_personalizadas ??
+          []) as CondutaPersonalizada[];
+        const condutasPersonalizadas = [
+          ...atual.condutasPersonalizadas,
+          ...personalizadasRemotas.filter((c) => !idsLocais.has(c.id)),
+        ];
+
+        return { marcasPorSemana, condutasPersonalizadas };
+      });
+    }
+
+    hidratarDaNuvem();
+    return () => {
+      cancelado = true;
+    };
+  }, [semanaSelecionadaId]);
+
+  useEffect(() => {
+    if (!supabase) return;
+    const marcasDaSemana = storage.marcasPorSemana[semanaSelecionadaId] ?? {};
+
+    const handle = setTimeout(() => {
+      supabase!
+        .from('mural_semanal')
+        .upsert(
+          {
+            user_id: getDeviceId(),
+            semana_iso: semanaSelecionadaId,
+            condutas_completadas: marcasDaSemana,
+            condutas_personalizadas: storage.condutasPersonalizadas,
+            updated_at: new Date().toISOString(),
+          },
+          { onConflict: 'user_id,semana_iso' }
+        )
+        .then(({ error }) => {
+          if (error) console.warn('Falha ao sincronizar mural com Supabase:', error.message);
+        });
+    }, SYNC_DEBOUNCE_MS);
+
+    return () => clearTimeout(handle);
+  }, [storage, semanaSelecionadaId]);
 
   const diasDaSemana = useMemo(() => getDiasDaSemana(semanaSelecionadaId), [semanaSelecionadaId]);
 
