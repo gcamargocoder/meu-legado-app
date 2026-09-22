@@ -23,7 +23,20 @@ create table if not exists perfil_usuario (
   created_at timestamptz not null default now()
 );
 
--- Observação: nenhuma política de RLS foi definida ainda porque o app não
--- tem autenticação de usuário real (o `user_id` usado hoje é um UUID
--- anônimo por dispositivo). Antes de expor este schema em produção com
--- Supabase Auth, habilite RLS e adicione policies baseadas em auth.uid().
+-- RLS habilitado com "deny all" por padrão (nenhuma policy criada).
+--
+-- O app ainda não tem autenticação real: o `user_id` enviado hoje é um
+-- UUID anônimo gerado no dispositivo (src/lib/deviceId.ts), não uma
+-- identidade verificada pelo Supabase Auth. Se essas tabelas ficassem
+-- acessíveis via anon key sem RLS, qualquer cliente poderia ler ou
+-- sobrescrever os dados de qualquer outro usuário só adivinhando ou
+-- reaproveitando um `user_id` alheio (IDOR) — a anon key é pública por
+-- design, então a única barreira real é a policy do banco.
+--
+-- Por isso: RLS ligado e sem policies, o que bloqueia todo acesso via API
+-- por enquanto (a sincronização do useMuralData falha silenciosamente e o
+-- app continua funcionando 100% offline via localStorage). Quando o
+-- Supabase Auth for adicionado, troque `user_id` pelo id de sessão real e
+-- crie policies do tipo `using (auth.uid() = user_id)` para cada tabela.
+alter table mural_semanal enable row level security;
+alter table perfil_usuario enable row level security;

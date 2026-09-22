@@ -97,6 +97,15 @@ export function useMuralData() {
   // Sincronização com Supabase: localStorage continua sendo a fonte de
   // verdade imediata (offline-first); a nuvem é só um espelho em segundo
   // plano, sem bloquear a UI e tolerando falhas silenciosamente.
+  //
+  // getDeviceId() NÃO é uma identidade autenticada — é só um UUID gerado
+  // no próprio dispositivo, então nada aqui garante que dois dispositivos
+  // não colidam ou que um cliente mal-intencionado não envie o user_id de
+  // outra pessoa. Quem impede isso hoje é o RLS "deny all" da migração
+  // (supabase/migrations/20260921_init_schema.sql): sem policy, toda
+  // chamada abaixo falha e cai no catch/erro silencioso, então na prática
+  // a sincronização só passa a funcionar de verdade depois que houver
+  // Supabase Auth real e políticas baseadas em auth.uid().
   useEffect(() => {
     if (!supabase) return;
     let cancelado = false;
