@@ -13,6 +13,7 @@ export interface CondutaPersonalizada {
 
 interface MuralStorage {
   condutasPersonalizadas: CondutaPersonalizada[];
+  condutasOcultas: string[];
   marcasPorSemana: Record<string, Record<string, boolean[]>>;
 }
 
@@ -21,7 +22,7 @@ function getStorageKey(perfilId: string | null): string {
 }
 
 function estadoVazio(): MuralStorage {
-  return { condutasPersonalizadas: [], marcasPorSemana: {} };
+  return { condutasPersonalizadas: [], condutasOcultas: [], marcasPorSemana: {} };
 }
 
 function carregarStorage(perfilId: string | null): MuralStorage {
@@ -31,6 +32,7 @@ function carregarStorage(perfilId: string | null): MuralStorage {
     const salvo = JSON.parse(bruto) as Partial<MuralStorage>;
     return {
       condutasPersonalizadas: salvo.condutasPersonalizadas ?? [],
+      condutasOcultas: salvo.condutasOcultas ?? [],
       marcasPorSemana: salvo.marcasPorSemana ?? {},
     };
   } catch {
@@ -128,7 +130,7 @@ export function useMuralData(perfilId: string | null = null) {
     async function hidratarDaNuvem() {
       const { data, error } = await supabase!
         .from('mural_semanal')
-        .select('condutas_completadas, condutas_personalizadas')
+        .select('condutas_completadas, condutas_personalizadas, condutas_ocultas')
         .eq('user_id', getDeviceId())
         .eq('semana_iso', semanaSelecionadaId)
         .eq('crianca_id', criancaId)
@@ -156,7 +158,10 @@ export function useMuralData(perfilId: string | null = null) {
           ...personalizadasRemotas.filter((c) => !idsLocais.has(c.id)),
         ];
 
-        return { marcasPorSemana, condutasPersonalizadas };
+        const ocultasRemotas = (data.condutas_ocultas ?? []) as string[];
+        const condutasOcultas = Array.from(new Set([...atual.condutasOcultas, ...ocultasRemotas]));
+
+        return { marcasPorSemana, condutasPersonalizadas, condutasOcultas };
       });
     }
 
@@ -181,6 +186,7 @@ export function useMuralData(perfilId: string | null = null) {
             crianca_id: criancaId,
             condutas_completadas: marcasDaSemana,
             condutas_personalizadas: storage.condutasPersonalizadas,
+            condutas_ocultas: storage.condutasOcultas,
             updated_at: new Date().toISOString(),
           },
           { onConflict: 'user_id,semana_iso,crianca_id' }
@@ -243,11 +249,23 @@ export function useMuralData(perfilId: string | null = null) {
     }));
   }, []);
 
-  const removerCondutaPersonalizada = useCallback((condutaId: string) => {
-    setStorage((atual) => ({
-      ...atual,
-      condutasPersonalizadas: atual.condutasPersonalizadas.filter((c) => c.id !== condutaId),
-    }));
+  /**
+   * Remove uma conduta da lista visível, seja ela personalizada (some de
+   * vez) ou padrão/sugerida do conteúdo (fica escondida para este perfil,
+   * já que vem de um JSON estático que não pode ser editado em runtime).
+   */
+  const removerConduta = useCallback((condutaId: string) => {
+    setStorage((atual) => {
+      const eraPersonalizada = atual.condutasPersonalizadas.some((c) => c.id === condutaId);
+      if (eraPersonalizada) {
+        return {
+          ...atual,
+          condutasPersonalizadas: atual.condutasPersonalizadas.filter((c) => c.id !== condutaId),
+        };
+      }
+      if (atual.condutasOcultas.includes(condutaId)) return atual;
+      return { ...atual, condutasOcultas: [...atual.condutasOcultas, condutaId] };
+    });
   }, []);
 
   return {
@@ -261,7 +279,8 @@ export function useMuralData(perfilId: string | null = null) {
     irParaProximaSemana,
     voltarParaSemanaAtual,
     condutasPersonalizadas: storage.condutasPersonalizadas,
+    condutasOcultas: storage.condutasOcultas,
     adicionarCondutaPersonalizada,
-    removerCondutaPersonalizada,
+    removerConduta,
   };
 }

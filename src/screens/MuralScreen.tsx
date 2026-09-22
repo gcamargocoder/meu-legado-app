@@ -1,10 +1,13 @@
-import { useMemo, useState, type FormEvent } from 'react';
-import { ChevronLeft, ChevronRight, Plus, Star, CheckCircle2 } from 'lucide-react';
+import { useEffect, useMemo, useState, type FormEvent } from 'react';
+import { ChevronLeft, ChevronRight, Plus, Star, CheckCircle2, Trash2 } from 'lucide-react';
 import { useConteudo } from '../hooks/useConteudo';
 import { useMuralData } from '../hooks/useMuralData';
 import { usePerfilAtivo } from '../context/PerfilContext';
 import { useFaixaEtariaAtiva } from '../context/FaixaEtariaContext';
 import { PageHero } from '../components/ui/PageHero';
+import { Toast } from '../components/ui/Toast';
+
+const TOAST_DURATION_MS = 2200;
 
 const LABELS_DIAS = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'];
 
@@ -31,12 +34,21 @@ export function MuralScreen() {
     voltarParaSemanaAtual,
     estaNaSemanaAtual,
     condutasPersonalizadas,
+    condutasOcultas,
     adicionarCondutaPersonalizada,
+    removerConduta,
   } = useMuralData(perfilAtivo?.id ?? null);
 
   const [formAberto, setFormAberto] = useState(false);
   const [novoTitulo, setNovoTitulo] = useState('');
   const [novaDescricao, setNovaDescricao] = useState('');
+  const [toastMsg, setToastMsg] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!toastMsg) return;
+    const handle = setTimeout(() => setToastMsg(null), TOAST_DURATION_MS);
+    return () => clearTimeout(handle);
+  }, [toastMsg]);
 
   const condutasDaSemana = useMemo(() => {
     const doConteudo = categoriasCondutas.flatMap((categoria) =>
@@ -46,8 +58,9 @@ export function MuralScreen() {
       ...conduta,
       categoria: 'Personalizada',
     }));
-    return [...doConteudo, ...personalizadas];
-  }, [categoriasCondutas, condutasPersonalizadas]);
+    const condutasOcultasSet = new Set(condutasOcultas);
+    return [...doConteudo, ...personalizadas].filter((c) => !condutasOcultasSet.has(c.id));
+  }, [categoriasCondutas, condutasPersonalizadas, condutasOcultas]);
 
   function handleAdicionarConduta(e: FormEvent) {
     e.preventDefault();
@@ -57,6 +70,11 @@ export function MuralScreen() {
     setNovoTitulo('');
     setNovaDescricao('');
     setFormAberto(false);
+  }
+
+  function handleRemoverConduta(condutaId: string, titulo: string) {
+    removerConduta(condutaId);
+    setToastMsg(`"${titulo}" removida`);
   }
 
   const IconeMarca = modoAdolescente ? CheckCircle2 : Star;
@@ -126,9 +144,19 @@ export function MuralScreen() {
                   {label}
                 </th>
               ))}
+              <th className="px-2 py-2" />
             </tr>
           </thead>
           <tbody>
+            {condutasDaSemana.length === 0 && (
+              <tr>
+                <td colSpan={LABELS_DIAS.length + 2} className="px-3 py-6 text-center text-sm text-primary/50">
+                  {modoAdolescente
+                    ? 'Nenhum pacto por aqui ainda. Adicione um abaixo.'
+                    : 'Nenhuma conduta por aqui ainda. Adicione uma abaixo.'}
+                </td>
+              </tr>
+            )}
             {condutasDaSemana.map((conduta) => {
               const marcas = marcasPorConduta[conduta.id] ?? new Array(7).fill(false);
               return (
@@ -154,6 +182,16 @@ export function MuralScreen() {
                       </button>
                     </td>
                   ))}
+                  <td className="px-1 py-2 text-center">
+                    <button
+                      type="button"
+                      onClick={() => handleRemoverConduta(conduta.id, conduta.titulo)}
+                      aria-label={`Remover ${conduta.titulo}`}
+                      className="flex h-8 w-8 items-center justify-center rounded-full text-alert/60 transition-all duration-200 hover:bg-alert/10 hover:text-alert active:scale-90"
+                    >
+                      <Trash2 className="h-4 w-4" />
+                    </button>
+                  </td>
                 </tr>
               );
             })}
@@ -218,6 +256,8 @@ export function MuralScreen() {
           </button>
         )}
       </div>
+
+      <Toast message={toastMsg} />
     </div>
   );
 }
