@@ -3,18 +3,38 @@
 @tailwind utilities;
 
 :root {
-  --color-bg: #f5f1e6;
+  --color-bg: #fbf6ee;
   --color-primary: #1f3a2e;
   --color-accent: #c9962f;
   --color-alert: #7a3f4d;
+  --color-terracotta: #d98a6c;
+  --color-sage: #8aa387;
+  --color-warm-amber: #e0a458;
+
+  --gradient-terracotta: rgba(217, 138, 108, 0.16);
+  --gradient-sage: rgba(138, 163, 135, 0.16);
+  --gradient-amber: rgba(224, 164, 88, 0.14);
+
+  --glass-bg: rgba(255, 255, 255, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.5);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #14201a;
-    --color-primary: #cfe3d8;
-    --color-accent: #e0b256;
-    --color-alert: #c98b9a;
+    --color-bg: #14171a;
+    --color-primary: #ede6da;
+    --color-accent: #e8b563;
+    --color-alert: #d99fae;
+    --color-terracotta: #e09a80;
+    --color-sage: #9ab096;
+    --color-warm-amber: #e8b563;
+
+    --gradient-terracotta: rgba(224, 154, 128, 0.1);
+    --gradient-sage: rgba(154, 176, 150, 0.08);
+    --gradient-amber: rgba(232, 181, 99, 0.08);
+
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.08);
   }
 }
 
@@ -26,12 +46,27 @@ body,
 
 body {
   background-color: var(--color-bg);
+  background-image: radial-gradient(at 15% 0%, var(--gradient-terracotta) 0px, transparent 55%),
+    radial-gradient(at 85% 8%, var(--gradient-sage) 0px, transparent 55%),
+    radial-gradient(at 50% 100%, var(--gradient-amber) 0px, transparent 60%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
+  color: var(--color-primary);
 }
 
 h1,
 h2,
 h3 {
   font-family: 'Fraunces', serif;
+}
+
+.glass-surface {
+  background-color: var(--glass-bg);
+  border-color: var(--glass-border);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }

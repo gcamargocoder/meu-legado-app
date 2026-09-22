@@ -1,45 +1,62 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { Home, Sprout, MessagesSquare, Star, Gift, BookOpenText, type LucideIcon } from 'lucide-react';
 
 interface TabItem {
   to: string;
   label: string;
-  icon: string;
+  Icon: LucideIcon;
 }
 
 const TABS: TabItem[] = [
-  { to: '/', label: 'Início', icon: '🏠' },
-  { to: '/faixas-etarias', label: 'Faixas', icon: '🌱' },
-  { to: '/situacoes', label: 'Situações', icon: '💬' },
-  { to: '/mural', label: 'Mural', icon: '⭐' },
-  { to: '/premios', label: 'Prêmios', icon: '🎁' },
-  { to: '/frases', label: 'Frases', icon: '📖' },
+  { to: '/', label: 'Início', Icon: Home },
+  { to: '/faixas-etarias', label: 'Faixas', Icon: Sprout },
+  { to: '/situacoes', label: 'Situações', Icon: MessagesSquare },
+  { to: '/mural', label: 'Mural', Icon: Star },
+  { to: '/premios', label: 'Prêmios', Icon: Gift },
+  { to: '/frases', label: 'Frases', Icon: BookOpenText },
 ];
 
 export function TabBar() {
+  const location = useLocation();
+
   return (
     <nav
-      className="fixed bottom-0 left-1/2 z-10 w-full max-w-[560px] -translate-x-1/2 border-t border-primary/10 bg-app"
-      style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
+      className="fixed bottom-3 left-1/2 z-10 w-[calc(100%-1.5rem)] max-w-[536px] -translate-x-1/2 rounded-3xl border border-white/40 bg-white/70 shadow-floating backdrop-blur-md dark:border-white/10 dark:bg-white/[0.06]"
+      style={{ marginBottom: 'env(safe-area-inset-bottom)' }}
     >
-      <ul className="flex justify-between px-1 py-1">
-        {TABS.map((tab) => (
-          <li key={tab.to} className="flex-1">
-            <NavLink
-              to={tab.to}
-              end={tab.to === '/'}
-              className={({ isActive }) =>
-                `flex flex-col items-center gap-0.5 rounded-card px-1 py-2 text-[11px] font-medium transition-colors ${
-                  isActive ? 'text-accent' : 'text-primary/60'
-                }`
-              }
-            >
-              <span aria-hidden="true" className="text-lg leading-none">
-                {tab.icon}
-              </span>
-              {tab.label}
-            </NavLink>
-          </li>
-        ))}
+      <ul className="flex justify-between px-1.5 py-1.5">
+        {TABS.map((tab) => {
+          const ativo =
+            tab.to === '/' ? location.pathname === '/' : location.pathname.startsWith(tab.to);
+          const Icon = tab.Icon;
+          return (
+            <li key={tab.to} className="flex-1">
+              <NavLink
+                to={tab.to}
+                end={tab.to === '/'}
+                className="relative flex flex-col items-center gap-0.5 rounded-2xl px-1 py-2 text-[10px] font-medium"
+              >
+                {ativo && (
+                  <motion.span
+                    layoutId="tab-indicator"
+                    className="absolute inset-0 rounded-2xl bg-primary/10"
+                    transition={{ type: 'spring', stiffness: 420, damping: 32 }}
+                  />
+                )}
+                <Icon
+                  className={`relative z-10 h-5 w-5 transition-all duration-200 ${
+                    ativo ? 'scale-110 text-accent' : 'text-primary/50'
+                  }`}
+                  strokeWidth={ativo ? 2.4 : 2}
+                />
+                <span className={`relative z-10 ${ativo ? 'text-accent' : 'text-primary/50'}`}>
+                  {tab.label}
+                </span>
+              </NavLink>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );
